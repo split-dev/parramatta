@@ -1,0 +1,22 @@
+.cta {
+  padding: 40px 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  @media (min-width: 640px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media (min-width: 1240px) {
+    padding: 85px 52px;
+  }
+  @media (min-width: 1126px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-white-outline {
+    @media (max-width: 1127px) {
+      margin-top: 16px;
+    }
+  }
+}

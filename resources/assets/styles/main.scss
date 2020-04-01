@@ -1,0 +1,45 @@
+/** Import theme styles */
+@import "reset";
+
+/** Utilities & Helpers */
+@import "utilities/position";
+
+/** Import everything from autoload */
+@import "./autoload/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import "~swiper/css/swiper.min.css";
+
+@import "foundation";
+@import "type";
+@import "common/global";
+@import "common/buttons";
+
+/**
+ * ==========
+ * Components
+ * ==========
+ * Components are reusable UI elements on pages, for example:
+ * - generic components can be buttons, navs, gallery slider
+ * - page-specific components such as testimonials
+ */
+@import "components/cta";
+@import "components/image-block";
+@import "components/single-tile";
+
+@import "pages/home";
+
+/**
+ * ==========
+ * Layouts
+ * ==========
+ * Layouts define the scaffold of the application
+ * such as header, footer
+ */
+@import "layouts/footer";
+@import "layouts/header";

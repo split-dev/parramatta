@@ -1,0 +1,46 @@
+// Grid
+$global-width: 1250px;
+
+// Colours
+$primary: #174194;
+$secondary: #5c86da;
+$white: #fff;
+
+$foundation-palette: (
+  primary: $primary,
+  secondary: $secondary,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+$grey: (
+  extra: #292929,
+  medium: #919191,
+  light: #f6f6f6,
+  white: #fff,
+);
+$anchor-color-hover: $secondary;
+
+// Type
+$header-styles: (
+  small: (
+    "h1": ("font-size": 60),
+    "h2": ("font-size": 45),
+    "h3": ("font-size": 35),
+    "h4": ("font-size": 21),
+    "h5": ("font-size": 16),
+  ),
+  medium: (
+    "h1": ("font-size": 70),
+    "h2": ("font-size": 55),
+    "h3": ("font-size": 42),
+    "h4": ("font-size": 29),
+    "h5": ("font-size": 23),
+  ),
+);
+$header-font-family: "Montserrat", sans-serif;
+$header-font-weight: 800;
+$body-font-family: "Roboto", sans-serif;
+
+// Animations
+$transition: 0.2s;

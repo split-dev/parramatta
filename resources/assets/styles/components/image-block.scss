@@ -1,0 +1,60 @@
+.image-block {
+  &__text {
+    padding: 50px 15px;
+    position: relative;
+    z-index: 1;
+    @media (min-width: 640px) {
+      padding: 70px 15px 46px;
+    }
+    @media (min-width: 1024px) {
+      width: 46%;
+      background-clip: content-box;
+      padding: 70px 0 46px;
+    }
+    br {
+      display: none;
+      @media (min-width: 1024px) {
+        display: inline;
+      }
+    }
+    &.text-white * {
+      color: inherit;
+    }
+    &__content {
+      width: 100%;
+      @media (min-width: 1024px) {
+        padding: 100px 15px;
+        max-width: 544px;
+        margin-left: auto;
+      }
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  &__img {
+    width: 80%;
+    min-height: 240px;
+    background-size: cover;
+    background-position: center center;
+    @media (min-width: 640px) {
+      min-height: 400px;
+    }
+    @media (min-width: 1024px) {
+      margin-left: -40px;
+      width: 57%;
+    }
+  }
+  &__subtitle {
+    color: map_get($grey, medium) !important;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &__title {
+    text-transform: uppercase;
+  }
+  & + .cta__section {
+    margin-top: -46px;
+    padding-top: 40px;
+  }
+}

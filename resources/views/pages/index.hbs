@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="index">
+  {{> ../common/header}}
+  <section class="home-hero" style="background-image: url('images/pictures/home-hero.jpg')">
+    <div class="row flex-dir-column">
+      <h1>
+        Start your journey <br>
+        with Atlantic</h1>
+      <p>
+        We specialise in customising each build from adding features and adjusting floor plans to choosing from hundreds of colours upholstery, furniture and cabinetry.
+      </p>
+      <div class="flex-container flex-align-center">
+        <a href="#" class="btn btn-white-outline">Find your local dealer</a>
+        <span>or</span>
+        <a href="#" class="btn no-arrow btn-white fw-bold">Explore our range</a>
+      </div>
+    </div>
+  </section>
+  <section class="swiper-container home-products">
+    <div class="swiper-wrapper">
+      {{#each product}}
+      <div class="swiper-slide home-products__slide">
+        <div class="flex-container flex-dir-column align-center-middle text-center">
+          <img src="images/products/caravan-1.jpg" alt="#">
+          <h2 class="home-products__title">
+            <svg class="home-products__arrow--left" width="22px" height="16px" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><g stroke="inherit" stroke-width="1" fill="none" stroke-linecap="round"><g transform="translate(1.000000, 1.000000)" stroke="inherit" stroke-width="2"><polyline points="12.4124355 0 19.2060059 6.79357043 12.4124355 13.5871409"></polyline><line x1="1.13686838e-13" y1="6.79357043" x2="19.2060059" y2="6.79357043"></line><line class="svg-anim" x1="1.13686838e-13" y1="6.79357043" x2="19.2060059" y2="6.79357043"></line></g></g></svg>
+            {{title}}
+            <svg class="home-products__arrow--right" width="22px" height="16px" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><g stroke="inherit" stroke-width="1" fill="none" stroke-linecap="round"><g transform="translate(1.000000, 1.000000)" stroke="inherit" stroke-width="2"><polyline points="12.4124355 0 19.2060059 6.79357043 12.4124355 13.5871409"></polyline><line x1="1.13686838e-13" y1="6.79357043" x2="19.2060059" y2="6.79357043"></line><line class="svg-anim" x1="1.13686838e-13" y1="6.79357043" x2="19.2060059" y2="6.79357043"></line></g></g></svg>
+          </h2>
+          <p class="text-grey-medium">The Endeavour is the swiss army knife of the caravan world and can be customised to suit just about any requirement.</p>
+          <a href="#" class="btn btn-primary">Download our free brochure</a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </section>
+  {{> ../partials/image-block}}
+
+  <section class="overflow-hidden review-block">
+    <div class="row flex-dir-column-reverse large-flex-dir-row">
+      <div class="review-block__img position-relative"style="background-image: url('images/pictures/retired-couple-camping.jpg')">
+
+      </div>
+      <div class="review-block__text">
+        <div class="review-block__stars">
+          <img src="images/symbols/star--filled.svg" alt="#">
+          <img src="images/symbols/star--filled.svg" alt="#">
+          <img src="images/symbols/star--filled.svg" alt="#">
+          <img src="images/symbols/star--filled.svg" alt="#">
+          <img src="images/symbols/star--empty.svg" alt="#">
+        </div>
+        <h3 class="text-grey-extra">
+          It’s the lifestyle <br>
+          we deserved</h3>
+          <p class="text-grey-medium">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#" class="btn btn-grey fw-bold">Read more reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="recent-posts bg-grey-light">
+    <div class="row">
+      <div class="recent-posts__title column small-12">
+        <h3 class="text-grey-extra text-center">Latest news and events</h3>
+      </div>
+      <div class="column small-12">
+        <div class="row tile-container">
+          {{#each news-tile}}
+            {{> ../partials/tile}}
+          {{/each}}
+        </div>
+      </div>
+      <div class="recent-posts__link column small-12 text-center">
+        <a href="#" class="btn btn-grey fw-bold">View all</a>
+      </div>
+    </div>
+  </section>
+  {{> ../partials/cta}}
+  {{> ../common/footer}}
+</body>
+</html>

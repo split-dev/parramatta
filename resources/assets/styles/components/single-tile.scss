@@ -1,0 +1,46 @@
+.single-tile {
+  display: block;
+  padding: 30px 20px;
+  min-height: 260px;
+  height: 100%;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+  &:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    @extend .absolute-fill;
+  }
+  @media (min-width: 640px) {
+    padding: 40px 30px;
+  }
+  &:hover {
+    display: block;
+    @extend .btn, :hover;
+  }
+  span {
+    display: block;
+  }
+  &__subtitle {
+    font-size: 16px;
+    color: $white !important;
+    @extend p;
+  }
+  &__title {
+    color: $white;
+    @extend h5;
+    @extend .fw-bold;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+.tile-container {
+  & > * {
+    margin-bottom: 15px;
+    @media (min-width: 640px) {
+      margin-bottom: 30px;
+    }
+  }
+}

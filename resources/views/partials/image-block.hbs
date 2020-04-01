@@ -1,0 +1,13 @@
+{{#with image-block}}
+<section class="image-block flex-container flex-dir-column large-flex-dir-row">
+  <div class="image-block__text {{text-class}}">
+    <div class="image-block__text__content">
+      <p class="image-block__subtitle">{{subtitle}}</p>
+      <h3 class="image-block__title">{{{heading}}}</h3>
+      <p>{{{text}}}</p>
+      {{#if label}}<a href="#" class="btn btn-white fw-bold">{{label}}</a>{{/if}}
+    </div>
+  </div>
+  <div class="image-block__img" style="background-image: url('{{image}}')"></div>
+</section>
+{{/with}}

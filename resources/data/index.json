@@ -1,0 +1,35 @@
+{
+  "header": {
+    "class": "initial-transparent transparent"
+  },
+  "product": [
+    {"title": "Endeavour"},
+    {"title": "High terrain"},
+    {"title": "New generation"}
+  ],
+  "image-block": {
+    "text-class": "bg-grey-extra text-white",
+    "subtitle": "UPCOMING EVENTS",
+    "heading": "Visit us at the <br /> lorem show",
+    "text": "Ut enim ad minim veniam, quis nostrud <br /> exercitation ullamco laboris nisi ut aliquip <br /> ex ea commodo consequat.",
+    "label": "Register for your chance to win",
+    "image": "images/pictures/caravanandstars.jpg"
+  },
+  "news-tile": [
+    {
+      "image": "images/pictures/caravan-on-the-seashore.jpg",
+      "subtitle": "events",
+      "title": "Excepteur sint occaecat cupidatat non proident"
+    },
+    {
+      "image": "images/pictures/couple&dog-on-the-mountaing.jpg",
+      "subtitle": "Products",
+      "title": "Duis aute irure dolor "
+    },
+    {
+      "image": "images/pictures/kitchen-inside-the-caravan.jpg",
+      "subtitle": "Products",
+      "title": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui"
+    }
+  ]
+}
