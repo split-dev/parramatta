@@ -28,10 +28,6 @@
  * - generic components can be buttons, navs, gallery slider
  * - page-specific components such as testimonials
  */
-@import "components/cta";
-@import "components/image-block";
-@import "components/single-tile";
-
 @import "pages/home";
 
 /**
@@ -41,5 +37,4 @@
  * Layouts define the scaffold of the application
  * such as header, footer
  */
-@import "layouts/footer";
-@import "layouts/header";
+
