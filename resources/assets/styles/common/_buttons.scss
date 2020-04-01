@@ -90,3 +90,201 @@
 a[role="link"] {
   text-decoration: underline;
 }
+
+//artem
+
+.btn-blue--animate {
+  cursor: pointer;
+  margin-top: 70px;
+  min-width: 260px;
+  min-height: 40px;
+  background-color: $link;
+  font-size: 15px;
+  line-height: 19px;
+  color: $white;
+  display: table;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: $transition;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+  span {
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+    z-index: 3;
+    &:first-child {
+      span {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    &:last-child {
+      span {
+        opacity: 0;
+        transform: translateY(2rem);
+      }
+    }
+    span {
+      display: inline-block;
+      position: relative;
+      left: 0;
+    }
+  }
+}
+.btn-blue--animate[data-state=hover] > span:first-child > span {
+  color: $primary;
+  opacity: 1;
+  transform: translateY(-2rem);
+  transition: opacity 0.3s cubic-bezier(0.65, 0.025, 0.67, 0.36), transform 0.3s cubic-bezier(0.65, 0.025, 0.67, 0.36);
+  &:first-child {
+    transition-delay: 15ms;
+  }
+  &:nth-child(2) {
+    transition-delay: 30ms;
+  }
+  &:nth-child(3) {
+    transition-delay: 45ms;
+  }
+  &:nth-child(4) {
+    transition-delay: 60ms;
+  }
+  &:nth-child(5) {
+    transition-delay: 75ms;
+  }
+  &:nth-child(6) {
+    transition-delay: 90ms;
+  }
+  &:nth-child(7) {
+    transition-delay: 105ms;
+  }
+  &:nth-child(8) {
+    transition-delay: 120ms;
+  }
+  &:nth-child(9) {
+    transition-delay: 135ms;
+  }
+  &:nth-child(10) {
+    transition-delay: 150ms;
+  }
+  &:nth-child(11) {
+    transition-delay: 165ms;
+  }
+  &:nth-child(12) {
+    transition-delay: 180ms;
+  }
+  &:nth-child(13) {
+    transition-delay: 195ms;
+  }
+}
+.btn-blue--animate[data-state=hover] > span:last-child > span {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s cubic-bezier(0.34, 0.615, 0.4, 0.985), transform 0.3s cubic-bezier(0.34, 0.615, 0.4, 0.985);
+  &:first-child {
+    transition-delay: 15ms;
+  }
+  &:nth-child(2) {
+    transition-delay: 30ms;
+  }
+  &:nth-child(3) {
+    transition-delay: 45ms;
+  }
+  &:nth-child(4) {
+    transition-delay: 60ms;
+  }
+  &:nth-child(5) {
+    transition-delay: 75ms;
+  }
+  &:nth-child(6) {
+    transition-delay: 90ms;
+  }
+  &:nth-child(7) {
+    transition-delay: 105ms;
+  }
+  &:nth-child(8) {
+    transition-delay: 120ms;
+  }
+  &:nth-child(9) {
+    transition-delay: 135ms;
+  }
+  &:nth-child(10) {
+    transition-delay: 150ms;
+  }
+  &:nth-child(11) {
+    transition-delay: 165ms;
+  }
+  &:nth-child(12) {
+    transition-delay: 180ms;
+  }
+  &:nth-child(13) {
+    transition-delay: 195ms;
+  }
+}
+
+.btn-blue--animate[data-state=leave] > span:first-child > span {
+  animation: firstButtonSpanIn 0.3s cubic-bezier(0.34, 0.615, 0.4, 0.985) 1 forwards;
+  opacity: 0;
+  &:first-child {
+    animation-delay: 15ms;
+  }
+  &:nth-child(2) {
+    animation-delay: 30ms;
+  }
+  &:nth-child(3) {
+    animation-delay: 45ms;
+  }
+  &:nth-child(4) {
+    animation-delay: 60ms;
+  }
+  &:nth-child(5) {
+    animation-delay: 75ms;
+  }
+  &:nth-child(6) {
+    animation-delay: 90ms;
+  }
+  &:nth-child(7) {
+    animation-delay: 105ms;
+  }
+  &:nth-child(8) {
+    animation-delay: 120ms;
+  }
+  &:nth-child(9) {
+    animation-delay: 135ms;
+  }
+  &:nth-child(10) {
+    animation-delay: 150ms;
+  }
+  &:nth-child(11) {
+    animation-delay: 165ms;
+  }
+  &:nth-child(12) {
+    animation-delay: 180ms;
+  }
+  &:nth-child(13) {
+    animation-delay: 195ms;
+  }
+}
+@keyframes firstButtonSpanIn {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-blue--animate[data-state=leave] > span:last-child > span {
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 0.17s cubic-bezier(0.65, 0.025, 0.67, 0.36), transform 0.17s cubic-bezier(0.65, 0.025, 0.67, 0.36);
+  transition-delay: 0s;
+}
