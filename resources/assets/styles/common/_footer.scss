@@ -2,6 +2,9 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 640px) {
+    padding: 0 15px;
+  }
   &__top {
     width: 100%;
   }
@@ -12,6 +15,18 @@
     padding-left: 15px;
     padding-right: 45px;
     border-right: 1px solid #d0d0ce;
+    @media (max-width: 991px) {
+      max-width: 100%;
+      margin-bottom: 50px;
+      border-right: none;
+    }
+    @media (max-width: 640px) {
+      padding: 0 25px 40px 25px;
+      border-right: none;
+      border-bottom: 1px solid #d0d0ce;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__logo {
     max-width: 235px;
@@ -34,11 +49,19 @@
         display: flex;
         align-items: center;
         transition: $transition;
+        @media (max-width: 640px) {
+          justify-content: center;
+        }
         span {
-          width: 20px;
           margin-right: 12px;
           display: flex;
           justify-content: center;
+          @media (max-width: 991px) {
+            width: auto;
+          }
+        }
+        span:first-of-type {
+          width: 20px;
         }
         svg {
           path {
@@ -69,13 +92,34 @@
     display: flex;
     align-items: center;
     border-right: 1px solid #d0d0ce;
+    @media (max-width: 991px) {
+      padding: 0 15px;
+    }
+    @media (max-width: 640px) {
+      padding: 0 25px;
+      border-right: none;
+      border-bottom: 1px solid #d0d0ce;
+      display: flex;
+      justify-content: center;
+    }
     ul {
       display: flex;
       flex-wrap: wrap;
+      @media (max-width: 640px) {
+        max-width: 220px;
+        display: flex;
+        justify-content: space-between;
+      }
       li {
         width: 25%;
         text-align: left;
         margin-bottom: 20px;
+        @media (max-width: 991px) {
+          width: 32%;
+        }
+        @media (max-width: 640px) {
+          width: 41%;
+        }
         a {
           transition: $transition;
         }
@@ -86,7 +130,17 @@
     margin-left: 31px;
     padding-right: 0;
     @include center;
+    @media (max-width: 991px) {
+      justify-content: flex-start;
+      margin-left: 0;
+    }
+    @media (max-width: 640px) {
+      padding: 0 25px;
+    }
     ul {
+      @media (max-width: 640px) {
+        margin: 40px auto 0 !important;
+      }
       li {
         margin-bottom: 21px;
         &:hover {
@@ -114,9 +168,20 @@
     margin-top: 42px;
     background-color: #f9f9f9;
     padding: 18px 15px;
+    div {
+      > div {
+        @media (max-width: 640px) {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
     img {
       width: 50px;
       margin-right: 20px;
+      @media (max-width: 640px) {
+        margin-bottom: 15px;
+      }
     }
     span {
       width: 100%;

@@ -10,27 +10,15 @@ ul {
   margin: 0 !important;
 }
 
-.text-primary {
-  color: $primary;
+.desk {
+  display: inline-block;
+  @media (max-width: 640px) {
+    display: none !important;
+  }
 }
-.text-white {
-  color: $white;
-}
-.text-grey-extra {
-  color: map_get($grey, extra);
-}
-.text-grey-medium {
-  color: map_get($grey, medium);
-}
-.bg-primary {
-  background-color: $primary;
-}
-.bg-grey-extra {
-  background-color: map_get($grey, extra);
-}
-.bg-grey-light {
-  background-color: map_get($grey, light);
-}
-.fw-bold {
-  font-weight: 700;
+.mob {
+  display: none !important;
+  @media (max-width: 640px) {
+    display: inline-block !important;
+  }
 }
