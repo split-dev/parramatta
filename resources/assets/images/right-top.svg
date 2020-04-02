@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="45px" viewBox="0 0 49 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Screen Shot 2019-12-17 at 12.44.16 pm</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="61" height="80"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Email-Sign-Up" transform="translate(-271.000000, 0.000000)">
+            <g id="Screen-Shot-2019-12-17-at-12.44.16-pm" transform="translate(259.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <ellipse id="Oval" stroke="#00FBFE" stroke-width="15" mask="url(#mask-2)" cx="52" cy="4.5" rx="32.5" ry="33"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
