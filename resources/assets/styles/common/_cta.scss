@@ -59,9 +59,9 @@
   }
   &__input {
     position: relative;
-    max-width: 800px;
+    max-width: 100%;
     width: 100%;
-    margin-left: 80px;
+    margin-left: 47px;
     height: 60px;
     @media (max-width: 1299px) {
       max-width: 600px;
@@ -85,7 +85,7 @@
       display: flex;
       align-items: center;
       position: absolute;
-      right: 0;
+      right: 20px;
       top: 0;
       bottom: 0;
       margin: auto;
