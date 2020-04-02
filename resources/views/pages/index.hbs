@@ -40,6 +40,16 @@
     </span>
   </a>
 </div>
+<section class="news">
+  <div class="row column">
+    <h2>Upcoming events</h2>
+  </div>
+  <div class="row">
+    {{#each news}}
+      {{> ../partials/news-box }}
+    {{/each}}
+  </div>
+</section>
 {{> ../common/cta }}
 <footer>
   {{> ../common/footer }}

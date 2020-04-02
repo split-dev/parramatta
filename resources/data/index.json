@@ -1,4 +1,24 @@
 {
+  "news": [
+    {
+      "bg": "./images/background/one.jpg",
+      "date": "Family and Kids  |  29 November 2019",
+      "name": "Crafternoon",
+      "desc": "Drop in to Epping library to see the sample and find out what creative activity is on offer in the month of November!"
+    },
+    {
+      "bg": "./images/background/two.jpg",
+      "date": "Family and Kids  |  4 December 2019",
+      "name": "Craftastic Kids: Christmas Craft",
+      "desc": "It’s our last Craft Club for the year! Get inspired, create and put together a collection of beautiful Christmas ornaments from paper."
+    },
+    {
+      "bg": "./images/background/three.jpg",
+      "date": "Festivals  |  7 December 2019",
+      "name": "Epping Christmas Pool Party",
+      "desc": "City of Parramatta invites you to Epping Aquatic Centre for a Christmas Pool Party!"
+    }
+  ],
   "footer": {
 
   }
