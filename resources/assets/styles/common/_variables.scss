@@ -59,6 +59,13 @@ span.small {
   line-height: 20px;
 }
 
+a {
+  transition: $transition;
+}
+svg * {
+  transition: $transition;
+}
+
 //mixin
 @mixin center {
   display: flex;

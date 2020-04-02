@@ -89,6 +89,14 @@
     ul {
       li {
         margin-bottom: 21px;
+        &:hover {
+          a {
+            color: $secondary;
+          }
+          path {
+            fill: $secondary !important;
+          }
+        }
         a {
           display: flex;
           align-items: center;
@@ -127,6 +135,7 @@
   }
   &__contact--adress {
     ul {
+      flex-wrap: wrap;
       @include center;
       li {
         margin-right: 10px;
