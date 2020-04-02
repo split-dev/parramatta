@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-RegularItalic.eot"),
+    url("../fonts/Parramatta-RegularItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-RegularItalic.woff2") format("woff2"),
+    url("../fonts/Parramatta-RegularItalic.woff") format("woff"),
+    url("../fonts/Parramatta-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-Black.eot"),
+    url("../fonts/Parramatta-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-Black.woff2") format("woff2"),
+    url("../fonts/Parramatta-Black.woff") format("woff"),
+    url("../fonts/Parramatta-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-SemiboldItalic.eot"),
+    url("../fonts/Parramatta-SemiboldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/Parramatta-SemiboldItalic.woff") format("woff"),
+    url("../fonts/Parramatta-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-Thin.eot"),
+    url("../fonts/Parramatta-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-Thin.woff2") format("woff2"),
+    url("../fonts/Parramatta-Thin.woff") format("woff"),
+    url("../fonts/Parramatta-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-Light.eot"),
+    url("../fonts/Parramatta-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-Light.woff2") format("woff2"),
+    url("../fonts/Parramatta-Light.woff") format("woff"),
+    url("../fonts/Parramatta-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-Bold.eot"),
+    url("../fonts/Parramatta-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-Bold.woff2") format("woff2"),
+    url("../fonts/Parramatta-Bold.woff") format("woff"),
+    url("../fonts/Parramatta-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-ExtraboldItalic.eot"),
+    url("../fonts/Parramatta-ExtraboldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-ExtraboldItalic.woff2") format("woff2"),
+    url("../fonts/Parramatta-ExtraboldItalic.woff") format("woff"),
+    url("../fonts/Parramatta-ExtraboldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-ExtrathinItalic.eot"),
+    url("../fonts/Parramatta-ExtrathinItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-ExtrathinItalic.woff2") format("woff2"),
+    url("../fonts/Parramatta-ExtrathinItalic.woff") format("woff"),
+    url("../fonts/Parramatta-ExtrathinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-Extrabold.eot"),
+    url("../fonts/Parramatta-Extrabold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-Extrabold.woff2") format("woff2"),
+    url("../fonts/Parramatta-Extrabold.woff") format("woff"),
+    url("../fonts/Parramatta-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-LightItalic.eot"),
+    url("../fonts/Parramatta-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-LightItalic.woff2") format("woff2"),
+    url("../fonts/Parramatta-LightItalic.woff") format("woff"),
+    url("../fonts/Parramatta-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-Semibold.eot"),
+    url("../fonts/Parramatta-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-Semibold.woff2") format("woff2"),
+    url("../fonts/Parramatta-Semibold.woff") format("woff"),
+    url("../fonts/Parramatta-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-Extrathin.eot"),
+    url("../fonts/Parramatta-Extrathin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-Extrathin.woff2") format("woff2"),
+    url("../fonts/Parramatta-Extrathin.woff") format("woff"),
+    url("../fonts/Parramatta-Extrathin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-Regular.eot"),
+    url("../fonts/Parramatta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-Regular.woff2") format("woff2"),
+    url("../fonts/Parramatta-Regular.woff") format("woff"),
+    url("../fonts/Parramatta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-BlackItalic.eot"),
+    url("../fonts/Parramatta-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-BlackItalic.woff2") format("woff2"),
+    url("../fonts/Parramatta-BlackItalic.woff") format("woff"),
+    url("../fonts/Parramatta-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-ThinItalic.eot"),
+    url("../fonts/Parramatta-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-ThinItalic.woff2") format("woff2"),
+    url("../fonts/Parramatta-ThinItalic.woff") format("woff"),
+    url("../fonts/Parramatta-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Parramatta";
+  src:
+    url("../fonts/Parramatta-BoldItalic.eot"),
+    url("../fonts/Parramatta-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Parramatta-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Parramatta-BoldItalic.woff") format("woff"),
+    url("../fonts/Parramatta-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+

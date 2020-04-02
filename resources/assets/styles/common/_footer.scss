@@ -1,0 +1,136 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  &__top {
+    width: 100%;
+  }
+  &__info-company {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 70px;
+    border-right: 1px solid #d0d0ce;
+  }
+  &__logo {
+    max-width: 235px;
+    width: 100%;
+    height: 55px;
+  }
+  &__contact {
+    li {
+      margin: 16px 0;
+      transition: $transition;
+      &:hover {
+        a {
+          color: $secondary;
+        }
+        path {
+          fill: $secondary !important;
+        }
+      }
+      > a {
+        display: flex;
+        align-items: center;
+        transition: $transition;
+        span {
+          width: 20px;
+          margin-right: 12px;
+          display: flex;
+          justify-content: center;
+        }
+        svg {
+          path {
+            transition: $transition;
+          }
+        }
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    li {
+      margin: 0 15px 0 0;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 0 !important;
+        fill: $primary;
+        transition: $transition;
+        &:hover {
+          fill: $secondary;
+        }
+      }
+    }
+  }
+  &__nav {
+    padding: 0 0 0 45px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #d0d0ce;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 25%;
+        text-align: left;
+        margin-bottom: 20px;
+        a {
+          transition: $transition;
+        }
+      }
+    }
+  }
+  &__other-link {
+    margin-left: 31px;
+    padding-right: 0;
+    @include center;
+    ul {
+      li {
+        margin-bottom: 21px;
+        a {
+          display: flex;
+          align-items: center;
+          transition: $transition;
+          svg {
+            margin-left: 14px;
+          }
+        }
+      }
+    }
+  }
+  &__country {
+    width: 100%;
+    display: flex;
+    margin-top: 42px;
+    background-color: #f9f9f9;
+    padding: 18px 15px;
+    img {
+      margin-right: 20px;
+    }
+    span {
+      display: block;
+      max-width: 804px;
+      color: #333f48;
+    }
+  }
+  &__bottom {
+    width: 100%;
+    background-color: $primary;
+    padding: 10px 0;
+    * {
+      color: #fff;
+      font-size: 13px;
+      font-weight: 400;
+    }
+  }
+  &__contact--adress {
+    ul {
+      @include center;
+      li {
+        margin-right: 10px;
+      }
+    }
+  }
+}

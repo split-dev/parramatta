@@ -3,7 +3,7 @@ $global-width: 1250px;
 
 // Colours
 $primary: #002b49;
-$secondary: #5c86da;
+$secondary: #00b8de;
 $silver: #a2aaad;
 $white: #fff;
 $link: #00b8de;
@@ -40,9 +40,6 @@ $header-styles: (
     "h5": ("font-size": 23),
   ),
 );
-$header-font-family: "Montserrat", sans-serif;
-$header-font-weight: 800;
-$body-font-family: "Roboto", sans-serif;
 
 // Animations
 $transition: 0.2s;
@@ -60,4 +57,11 @@ span {
 span.small {
   font-size: 13px;
   line-height: 20px;
+}
+
+//mixin
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

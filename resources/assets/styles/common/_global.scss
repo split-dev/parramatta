@@ -1,3 +1,15 @@
+body * {
+  font-family: "Parramatta", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 !important;
+}
+
 .text-primary {
   color: $primary;
 }

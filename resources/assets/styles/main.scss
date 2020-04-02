@@ -1,5 +1,6 @@
 /** Import theme styles */
 @import "reset";
+@import "components/fonts";
 
 /** Utilities & Helpers */
 @import "utilities/position";
@@ -16,9 +17,9 @@
 @import "~swiper/css/swiper.min.css";
 
 @import "foundation";
-@import "type";
 @import "common/global";
 @import "common/buttons";
+@import "common/footer";
 
 /**
  * ==========
