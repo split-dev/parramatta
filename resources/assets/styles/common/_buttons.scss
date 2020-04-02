@@ -30,6 +30,7 @@ a[role="link"] {
     z-index: 3;
     &:first-child {
       span {
+        font-weight: 600;
         letter-spacing: -4px;
         opacity: 1;
         transform: translateY(0);
@@ -37,6 +38,7 @@ a[role="link"] {
     }
     &:last-child {
       span {
+        font-weight: 600;
         letter-spacing: -4px;
         opacity: 0;
         transform: translateY(2rem);
@@ -137,6 +139,15 @@ a[role="link"] {
   &:nth-child(13) {
     transition-delay: 195ms;
   }
+  &:nth-child(14) {
+    transition-delay: 210ms;
+  }
+  &:nth-child(15) {
+    transition-delay: 225ms;
+  }
+  &:nth-child(16) {
+    transition-delay: 240ms;
+  }
 }
 
 .btn-blue--animate[data-state=leave] > span:first-child > span {
@@ -180,6 +191,15 @@ a[role="link"] {
   }
   &:nth-child(13) {
     animation-delay: 195ms;
+  }
+  &:nth-child(14) {
+    animation-delay: 210ms;
+  }
+  &:nth-child(15) {
+    animation-delay: 225ms;
+  }
+  &:nth-child(16) {
+    animation-delay: 240ms;
   }
 }
 @keyframes firstButtonSpanIn {
