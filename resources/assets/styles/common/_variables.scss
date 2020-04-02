@@ -65,6 +65,9 @@ a {
 svg * {
   transition: $transition;
 }
+.row {
+  width: 100%;
+}
 
 //mixin
 @mixin center {
