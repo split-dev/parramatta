@@ -1,3 +1,19 @@
+.shadow-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(51, 63, 72, 0.5);
+  z-index: 25;
+  visibility: hidden;
+  opacity: 0;
+  transition: $transition;
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 .mega-menu {
   z-index: 90;
   position: fixed;
@@ -49,6 +65,7 @@
     background-color: #fff;
     position: relative;
     &:after {
+      pointer-events: none;
       content: "";
       position: absolute;
       display: block;
@@ -114,9 +131,12 @@
     align-items: center;
     > li {
       height: inherit;
-      margin-right: 32px;
+      padding-right: 32px;
+      &.hover {
+        opacity: 0.5;
+      }
       &:last-of-type {
-        margin-right: 0;
+        padding-right: 0;
       }
       &:hover {
         > div {
@@ -143,9 +163,6 @@
         height: inherit;
         color: $primary;
         font-weight: 600;
-        &.hover {
-          opacity: 0.5;
-        }
         &:after {
           position: absolute;
           height: 5px;
