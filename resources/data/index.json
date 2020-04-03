@@ -1,4 +1,7 @@
 {
+  "latest": {
+    "images": "./images/background/poll.jpg"
+  },
   "news": [
     {
       "bg": "./images/background/one.jpg",
