@@ -129,6 +129,12 @@
             bottom: 0;
           }
         }
+        > a {
+          &:after {
+            opacity: 1;
+            bottom: 1px;
+          }
+        }
       }
       > a {
         position: relative;
@@ -139,12 +145,6 @@
         font-weight: 600;
         &.hover {
           opacity: 0.5;
-        }
-        &:hover {
-          &:after {
-            opacity: 1;
-            bottom: 1px;
-          }
         }
         &:after {
           position: absolute;
