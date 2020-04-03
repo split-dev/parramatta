@@ -144,8 +144,10 @@
           }
         }
         span:last-of-type {
-          display: block;
-          max-width: 190px;
+          @media (max-width: 640px) {
+            display: block;
+            max-width: 190px;
+          }
         }
       }
     }
