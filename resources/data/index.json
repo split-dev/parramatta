@@ -1,4 +1,7 @@
 {
+  "iWanTo": {
+    "images": "./images/background/top.jpg"
+  },
   "latest": {
     "images": "./images/background/poll.jpg"
   },

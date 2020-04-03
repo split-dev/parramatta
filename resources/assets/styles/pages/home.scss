@@ -1,0 +1,153 @@
+.want {
+  &__img {
+    width: 64%;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 60px;
+    @media (max-width: 991px) {
+      max-width: 55%;
+    }
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+  &__white-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 30px 50px;
+    width: 100%;
+    max-width: 581px;
+    min-height: 257px;
+    background-color: #fff;
+    @media (max-width: 991px) {
+      margin-right: 35px;
+      padding: 20px 15px 20px 30px;
+    }
+    &:hover {
+      &:before {
+        width: 15px;
+      }
+      .line {
+        width: 32px;
+      }
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 10px;
+      background-color: $secondary;
+      transition: $transition;
+    }
+    h1 {
+      color: $primary;
+      font-weight: 700;
+      line-height: 46px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: #333f48;
+      line-height: 25px;
+    }
+    > span {
+      display: flex;
+      align-items: center;
+      margin-top: 22px;
+      color: $secondary;
+      font-weight: 600;
+      .arrow {
+        position: relative;
+        display: inline-block;
+      }
+      .line {
+        border-radius: 3px;
+        margin-left: 11px;
+        display: block;
+        height: 2px;
+        width: 22px;
+        background-color: $secondary;
+        transition: $transition;
+      }
+      svg {
+        position: absolute;
+        right: 0;
+        height: 18px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        fill: $secondary;
+      }
+    }
+  }
+  &__list {
+    padding: 60px 0 43px 40px;
+    background-color: #f9f9f9;
+    @media (max-width: 991px) {
+      padding: 35px 15px;
+    }
+    h2 {
+      font-weight: 700;
+      color: $primary;
+      margin-bottom: 25px;
+    }
+    ul {
+      li {
+        margin-bottom: 10px;
+        @media (max-width: 640px) {
+          margin: 0 auto 20px;
+          width: 100%;
+          max-width: 290px;
+          height: 70px;
+          border: 1px solid #d0d0ce;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding-left: 20px;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          &:hover {
+            img {
+              &:first-of-type {
+                opacity: 0;
+              }
+              &:last-of-type {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        .hover__img {
+          margin-right: 10px;
+          position: relative;
+          width: 35px;
+          height: 35px;
+          display: inline-block;
+          img {
+            position: absolute;
+            transition: $transition;
+            &:first-of-type {
+              opacity: 1;
+            }
+            &:last-of-type {
+              opacity: 0;
+            }
+          }
+        }
+        span:last-of-type {
+          display: block;
+          max-width: 190px;
+        }
+      }
+    }
+  }
+}
