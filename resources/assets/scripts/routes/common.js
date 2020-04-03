@@ -1,15 +1,16 @@
+import Headroom from 'headroom.js';
+
 export default {
   init() {
-    $( '.btn-blue--animate').hover(
+    var myElement = document.querySelector('.mega-menu');
+    var headroom  = new Headroom(myElement);
+    headroom.init();
+
+    $( 'ul.mega-menu__nav >li  >a' ).hover(
       function() {
-        $( this ).attr('data-state','hover');
+        $( 'ul.mega-menu__nav >li  >a' ).not(this).addClass('hover');
       }, function() {
-        $( this ).attr('data-state','leave');
-        $(this).css('pointer-events', 'none');
-        setTimeout(function(){
-          $('.btn-blue--animate').attr('data-state','none')
-            .css('pointer-events', 'auto');
-        }, 500);
+        $( 'ul.mega-menu__nav >li  >a' ).removeClass( 'hover' );
       }
     );
     },
