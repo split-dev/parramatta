@@ -27,14 +27,68 @@
   &.headroom--unpinned {
     transform: translateY(-100%);
   }
+  &__link--other {
+    padding: 25px 0;
+    a {
+      position: relative;
+      font-size: 16px;
+      font-weight: 600;
+      padding-right: 40px;
+      line-height: 17px;
+      &:hover {
+        svg * {
+          fill: $secondary;
+        }
+      }
+      &:last-of-type {
+        display: inline-flex;
+      }
+      svg {
+        margin-left: 15px;
+      }
+    }
+  }
+  &__white {
+    display: flex;
+    > ul {
+      padding: 0 23px;
+      &:first-child {
+        padding-right: 23px !important;
+        padding-left: 45px;
+      }
+      &:last-child {
+        padding-right: 0 !important;
+      }
+      &:before {
+        content: none !important;
+      }
+      strong {
+        display: block;
+        line-height: 17px;
+        color: #002b49;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      li {
+        margin-bottom: 10px;
+        a {
+          color: #333f48 !important;
+          font-size: 13px;
+          font-weight: 400 !important;
+        }
+      }
+    }
+  }
   &__element {
+    overflow: hidden;
     pointer-events: none;
     position: absolute;
-    padding: 30px 0;
     top: 100%;
     left: 0;
     right: 0;
     > div {
+      display: flex !important;
+      align-items: flex-start;
       visibility: hidden;
       opacity: 0;
       transition: $transition;
@@ -45,19 +99,43 @@
       left: 0;
       right: 0;
       content: "";
-      background-color: #f9f9f9;
+      background-color: #fff;
       z-index: -1;
       transition: 0.3s;
       bottom: 100%;
     }
-    li {
-      margin-bottom: 19px;
-      &:last-of-type {
-        margin-bottom: 0;
+    ul {
+      padding: 30px 23px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 0;
+        left: -300px;
+        background-color: #f9f9f9;
+        z-index: -1;
+        transition: 0.3s;
       }
-      a {
-        font-weight: 600;
-        color: $primary;
+      &:first-child {
+        padding-right: 66px;
+      }
+      li {
+        margin-bottom: 19px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        a {
+          font-weight: 600;
+          color: $primary;
+          transition: $transition;
+          &:hover {
+            color: $secondary !important;
+          }
+        }
       }
     }
   }
@@ -144,6 +222,11 @@
           > div {
             opacity: 1;
             visibility: visible;
+            > ul {
+              &:before {
+                height: 100% !important;
+              }
+            }
           }
           &:before {
             bottom: 0;
