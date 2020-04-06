@@ -1,0 +1,114 @@
+.news-bg {
+  position: relative;
+
+  &__info {
+    height: 345px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (max-width: 767px) {
+      height: 235px;
+    }
+  }
+
+  &__box {
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    margin: auto;
+    max-width: 565px;
+    height: 265px;
+    background-color: #fff;
+    padding: 30px 30px 30px 50px;
+    position: absolute;
+    @media (max-width: 767px) {
+      position: relative;
+      left: 0;
+      margin: 0 !important;
+      padding: 25px;
+      height: 315px;
+    }
+    &:hover {
+      &:before {
+        width: 15px;
+      }
+      .line {
+        width: 32px;
+      }
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 10px;
+      background-color: $secondary;
+      transition: $transition;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 46px;
+      color: $primary;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #a2aaad;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+    a {
+      color: $secondary;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 25px;
+      display: flex;
+      align-items: center;
+      .arrow {
+        position: relative;
+        display: inline-block;
+      }
+      .line {
+        border-radius: 3px;
+        margin-left: 11px;
+        display: block;
+        height: 2px;
+        width: 22px;
+        background-color: $secondary;
+        transition: $transition;
+      }
+      svg {
+        position: absolute;
+        right: 0;
+        height: 18px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        fill: $secondary;
+      }
+    }
+  }
+}
+
+.news-page {
+  .news-box {
+    margin-bottom: 30px;
+  }
+  .top-bg {
+    &__info {
+      height: 345px;
+    }
+  }
+}

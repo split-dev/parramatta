@@ -8,6 +8,10 @@
     {
       "title": "Parent Page",
       "url": "/parent.html"
+    },
+    {
+      "title": "News Page",
+      "url": "/news.html"
     }
   ]
 }
