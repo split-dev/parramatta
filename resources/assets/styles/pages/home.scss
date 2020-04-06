@@ -125,6 +125,11 @@
               }
             }
           }
+          span {
+            &:last-of-type {
+              font-size: 18px;
+            }
+          }
         }
         .hover__img {
           margin-right: 10px;
