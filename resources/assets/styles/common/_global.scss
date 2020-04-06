@@ -5,6 +5,12 @@ body * {
 }
 body {
   padding-top: 120px;
+  @media (max-width: 1199px) {
+    padding-top: 50px;
+  }
+  &.blocked {
+    overflow: hidden;
+  }
 }
 
 ul {

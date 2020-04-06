@@ -1,0 +1,148 @@
+.mob-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 501;
+  @media (max-width: 1199px) {
+    display: block;
+  }
+  &__la {
+    position: relative;
+    margin-left: 15px;
+    margin-top: 26px;
+    padding-left: 32px;
+    &:before {
+      content: url("images/icons/world-2.svg");
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    &:after {
+      content: url("images/icons/arrow-down.svg");
+      position: absolute;
+      right: -22px;
+      top: -3px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  &__link {
+    position: relative;
+    margin: 25px 15px !important;
+    border-bottom: 1px solid #d0d0ce;
+    li {
+      margin-bottom: 20px;
+      a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        svg {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  &__close {
+    background-color: #fff;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    transition: $transition;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+    &.active {
+      width: 100%;
+    }
+  }
+  &__top {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 15px;
+  }
+  &__logo {
+    max-width: 128px;
+    height: 30px;
+    img {
+      width: 100%;
+    }
+  }
+  &__burger,
+  &__search {
+    @include center;
+    cursor: pointer;
+  }
+}
+.mob-menu__nav {
+  position: fixed;
+  left: 0;
+  right: 40px;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 501;
+  background-color: #f9f9f9;
+  transition: $transition;
+  transform: translateX(-105%);
+  &.show {
+    transform: translateX(0);
+  }
+  .accordion-menu {
+    background-color: #fff;
+    padding: 25px 0;
+    > li {
+      a {
+        margin-right: 0 !important;
+        display: inline-block !important;
+        color: $primary;
+        font-weight: 700;
+      }
+      button {
+        position: relative;
+        width: 15px !important;
+        height: 15px !important;
+        &:before {
+          content: url("images/icons/arrow-down.svg");
+          position: absolute;
+          top: 3px;
+          left: -5px;
+          bottom: 0;
+          margin: auto;
+          height: 23px;
+        }
+        &:after {
+          content: none !important;
+        }
+      }
+      > ul {
+        a {
+          background: transparent !important;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 17px;
+          color: $primary;
+        }
+        > ul {
+          a {
+            font-size: 13px;
+            color: #333f48;
+          }
+        }
+      }
+    }
+  }
+}

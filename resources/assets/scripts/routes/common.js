@@ -1,7 +1,26 @@
 import Headroom from 'headroom.js';
+import 'foundation-sites/dist/js/plugins/foundation.accordionMenu'
+import 'foundation-sites/dist/js/plugins/foundation.core'
+import 'foundation-sites/dist/js/plugins/foundation.util.keyboard'
+import 'foundation-sites/dist/js/plugins/foundation.util.nest'
 
 export default {
   init() {
+    //menu
+    $('.mob-menu__burger').click( function () {
+      $('body').addClass('blocked');
+      $('.shadow-bg').addClass('show');
+      $('.mob-menu__close').addClass('active');
+      $('.mob-menu__nav').addClass('show');
+    });
+    $('.mob-menu__close').click( function () {
+      $('body').removeClass('blocked');
+      $('.shadow-bg').removeClass('show');
+      $('.mob-menu__close').removeClass('active');
+      $('.mob-menu__nav').removeClass('show');
+    });
+    // eslint-disable-next-line no-unused-vars,no-undef
+    var elem = new Foundation.AccordionMenu($('.accordion-menu'));
     //hover button
     $( '.btn-blue--animate').hover(
       function() {
@@ -39,7 +58,7 @@ export default {
       document.body.offsetHeight, document.documentElement.offsetHeight,
       document.body.clientHeight, document.documentElement.clientHeight
     );
-    $('.shadow-bg').css('height', scrollHeight + 'px');
+    $('.shadow-bg').css('height', (scrollHeight - 120) + 'px');
     },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
