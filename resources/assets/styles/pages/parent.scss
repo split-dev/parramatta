@@ -1,0 +1,141 @@
+.top-bg {
+  position: relative;
+
+  &__info {
+    height: 280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (max-width: 767px) {
+      height: 235px;
+    }
+  }
+
+  &__box {
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    margin: auto;
+    max-width: 565px;
+    height: 200px;
+    background-color: #fff;
+    padding: 30px 30px 30px 50px;
+    position: absolute;
+    @media (max-width: 767px) {
+      position: relative;
+      left: 0;
+      margin: 0 !important;
+      padding: 30px;
+      height: 248px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 10px;
+      background-color: $secondary;
+      display: block;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 46px;
+      color: $primary;
+    }
+
+    h3 {
+      color: #333f48;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+}
+.info {
+  margin-top: 60px;
+  &__box {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      &:before {
+        width: 5px;
+      }
+      h2 {
+        &:before {
+          opacity: 1;
+        }
+        .line {
+          width: 32px;
+          background-color: $secondary;
+        }
+        svg * {
+          fill: $secondary;
+        }
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      display: block;
+      transition: $transition;
+      background-color: $secondary;
+    }
+    h2 {
+      display: flex;
+      align-items: center;
+      font-size: 28px;
+      font-weight: 700;
+      color: $primary;
+      margin-bottom: 8px;
+    }
+    ul {
+      li {
+        color: #333f48;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 10px;
+      }
+    }
+    .arrow {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 13px;
+      .line {
+        border-radius: 3px;
+        display: block;
+        height: 2px;
+        width: 22px;
+        background-color: #333f48;
+        transition: $transition;
+      }
+      svg {
+        position: absolute;
+        right: 0;
+        height: 18px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        @media (max-width: 900px) {
+          right: -1px;
+        }
+      }
+    }
+  }
+}

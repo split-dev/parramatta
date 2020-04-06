@@ -1,0 +1,118 @@
+{
+  "topInfo": {
+    "image": "./images/background/parent-top.jpg",
+    "title": "Lorem ipsum",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  "info": [
+    {
+      "offset": "large-offset-0",
+      "name": "Ultricies mi quis"
+    },
+    {
+      "offset": "large-offset-1",
+      "name": "Ultricies mi quis"
+    },
+    {
+      "offset": "large-offset-1",
+      "name": "Ultricies mi quis"
+    },
+    {
+      "offset": "large-offset-0",
+      "name": "Ultricies mi quis"
+    },
+    {
+      "offset": "large-offset-1",
+      "name": "Vel turpis nunc \neget lorem dolor",
+      "line": [
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        }
+      ]
+    },
+    {
+      "offset": "large-offset-1",
+      "name": "Ultricies mi quis",
+      "line": [
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        }
+      ]
+    },
+    {
+      "offset": "large-offset-0",
+      "name": "Ultricies mi quis",
+      "line": [
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        }
+      ]
+    },
+    {
+      "offset": "large-offset-1",
+      "name": "Ultricies mi quis"
+    },
+    {
+      "offset": "large-offset-1",
+      "name": "Ultricies mi quis",
+      "line": [
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        },
+        {
+          "line-item": "Lorem ipsum dolor"
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "bg": "./images/background/one.jpg",
+      "date": "Family and Kids  |  29 November 2019",
+      "name": "Crafternoon",
+      "desc": "Drop in to Epping library to see the sample and find out what creative activity is on offer in the month of November!"
+    },
+    {
+      "bg": "./images/background/two.jpg",
+      "date": "Family and Kids  |  4 December 2019",
+      "name": "Craftastic Kids: Christmas Craft",
+      "desc": "It’s our last Craft Club for the year! Get inspired, create and put together a collection of beautiful Christmas ornaments from paper."
+    },
+    {
+      "bg": "./images/background/three.jpg",
+      "date": "Festivals  |  7 December 2019",
+      "name": "Epping Christmas Pool Party",
+      "desc": "City of Parramatta invites you to Epping Aquatic Centre for a Christmas Pool Party!"
+    }
+  ]
+}

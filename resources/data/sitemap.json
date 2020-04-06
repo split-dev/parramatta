@@ -4,6 +4,10 @@
     {
       "title": "Home Page",
       "url": "/index.html"
+    },
+    {
+      "title": "Parent Page",
+      "url": "/parent.html"
     }
   ]
 }
