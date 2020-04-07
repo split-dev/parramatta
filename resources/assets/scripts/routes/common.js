@@ -86,6 +86,10 @@ export default {
     $('.mega-menu__error .close').click ( function () {
       $('.mega-menu__error').addClass('hidden');
     });
+    //mob error close
+    $('.mob-menu__error .close').click ( function () {
+      $('.mob-menu__error').addClass('hidden');
+    });
     //cookie
     $('.close__cookie').click ( function () {
       $('.alert__cookie').addClass('hidden');

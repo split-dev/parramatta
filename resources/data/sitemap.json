@@ -12,6 +12,10 @@
     {
       "title": "News Page",
       "url": "/news.html"
+    },
+    {
+      "title": "Map page",
+      "url": "/map-page.html"
     }
   ]
 }

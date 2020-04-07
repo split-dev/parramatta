@@ -1,0 +1,83 @@
+{
+  "topInfo": {
+    "image": "./images/background/map.jpg",
+    "category": "Parks and reserves",
+    "title": "Map and List of\nParks and Reserves"
+  },
+  "news": [
+    {
+      "bg": "./images/news-page/one.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+    },
+    {
+      "bg": "./images/news-page/two.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+    },
+    {
+      "bg": "./images/news-page/three.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+    },
+    {
+      "bg": "./images/news-page/four.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+    },
+    {
+      "bg": "./images/news-page/five.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+    },
+    {
+      "bg": "./images/news-page/six.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+    },
+    {
+      "bg": "./images/news-page/seven.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+    },
+    {
+      "bg": "./images/news-page/neun.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+    },
+    {
+      "bg": "./images/news-page/10.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+    }
+  ],
+  "news-bottom": [
+    {
+      "bg": "./images/background/one.jpg",
+      "date": "Family and Kids  |  29 November 2019",
+      "name": "Crafternoon",
+      "desc": "Drop in to Epping library to see the sample and find out what creative activity is on offer in the month of November!"
+    },
+    {
+      "bg": "./images/background/two.jpg",
+      "date": "Family and Kids  |  4 December 2019",
+      "name": "Craftastic Kids: Christmas Craft",
+      "desc": "It’s our last Craft Club for the year! Get inspired, create and put together a collection of beautiful Christmas ornaments from paper."
+    },
+    {
+      "bg": "./images/background/three.jpg",
+      "date": "Festivals  |  7 December 2019",
+      "name": "Epping Christmas Pool Party",
+      "desc": "City of Parramatta invites you to Epping Aquatic Centre for a Christmas Pool Party!"
+    }
+  ]
+}
