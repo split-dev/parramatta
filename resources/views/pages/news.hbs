@@ -22,13 +22,31 @@
     </div>
   </div>
 {{/with}}
+<section class="filter">
+  <div class="row column">
+    <h2>Filter by</h2>
+    <ul>
+      <li class="active"><a href="#">Council News</a></li>
+      <li><a href="#">Media Releases</a></li>
+      <li><a href="#">On Exhibition</a></li>
+    </ul>
+    <div class="filter__select">
+      <select class="js-example-basic-filter" name="state">
+        <option value="0" disabled  selected>Filter by…</option>
+        <option value="AL">Council News</option>
+        <option value="WY">Media Releases</option>
+        <option value="WA">On Exhibition</option>
+      </select>
+    </div>
+  </div>
+</section>
 <section class="news">
   <div class="row">
     {{#each news}}
       {{> ../partials/news-box }}
     {{/each}}
   </div>
-  <a href="#" class="loading-btn">Loading more</a>
+  <a href="#" class="loading-btn"><img src="images/icons/anim.svg"><img src="images/icons/anim-h.gif" alt="" class="hover">Loading more</a>
 </section>
 {{> ../common/cta }}
 {{> ../common/mobile-nav }}

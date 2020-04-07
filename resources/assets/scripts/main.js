@@ -13,6 +13,7 @@ import Router from './util/Router';
 import common from './routes/common';
 import Detection from './util/Detection';
 import home from './routes/index';
+import news from './routes/news-page'
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -24,6 +25,7 @@ const routes = new Router({
   // All pages
   common,
   'index': home,
+  'newsPage': news,
 });
 
 // Load Events

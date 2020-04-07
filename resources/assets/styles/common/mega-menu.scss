@@ -33,6 +33,105 @@
   &.headroom--unpinned {
     transform: translateY(-100%);
   }
+  &__error {
+    height: 45px;
+    background-color: #ff7e00;
+    transition: $transition;
+    opacity: 1;
+    visibility: visible;
+    &.hidden {
+      visibility: hidden;
+      opacity: 0;
+    }
+    div {
+      > span {
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > span {
+          display: flex;
+          align-items: center;
+          img {
+            padding-right: 15px;
+          }
+        }
+      }
+      span {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 25px;
+        a {
+          text-decoration: underline;
+          color: #fff;
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 25px;
+        }
+      }
+      .close {
+        cursor: pointer;
+        img {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  &__la {
+    position: relative;
+    cursor: pointer;
+    z-index: 20;
+    padding-right: 12px;
+    &:hover {
+      ul {
+        transform: translateY(0);
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: -300px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      background-color: $primary;
+    }
+    &:after {
+      content: url("images/icons/arrow-white.svg");
+      height: 7px;
+      @include center;
+      padding-left: 7px;
+      padding-bottom: 4px;
+    }
+    ul {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 208px;
+      padding: 15px;
+      display: flex;
+      align-items: flex-start !important;
+      flex-direction: column;
+      background-color: $primary;
+      z-index: -5;
+      transform: translateY(-135%);
+      transition: 0.3s;
+      li {
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+        &.active {
+          a {
+            font-weight: 800;
+          }
+        }
+        a {
+          text-align: left;
+        }
+      }
+    }
+  }
   &__link--other {
     padding: 25px 0;
     a {

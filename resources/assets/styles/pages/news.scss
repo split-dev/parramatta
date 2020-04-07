@@ -102,6 +102,58 @@
   }
 }
 
+.filter {
+  margin-top: 55px;
+  > div {
+    display: flex !important;
+    align-items: center;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: $primary;
+    margin-right: 24px;
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+  ul {
+    display: flex;
+    @media (max-width: 640px) {
+      display: none;
+    }
+    li {
+      width: 160px;
+      height: 40px;
+      border: 1px solid #a2aaad;
+      margin-right: 15px;
+      transition: $transition;
+      @include center;
+      &.active {
+        border: 1px solid #00b8de;
+        background-color: #00b8de;
+        a {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+      a {
+        color: #a2aaad;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+  .filter__select {
+    width: 100%;
+    position: relative;
+    display: none;
+    @media (max-width: 640px) {
+      display: block;
+    }
+  }
+}
 .news-page {
   .news-box {
     margin-bottom: 30px;
@@ -110,5 +162,49 @@
     &__info {
       height: 345px;
     }
+  }
+  .news {
+    .loading-btn {
+      margin: 60px auto;
+      @media (max-width: 640px) {
+        margin: 40px auto;
+      }
+    }
+  }
+}
+
+//select2
+
+.select2-search--dropdown {
+  display: none !important;
+}
+.select2-selection {
+  height: 60px !important;
+  border: 2px solid #e8e8e7 !important;
+  background-color: #fff !important;
+  border-radius: 0 !important;
+  outline: none !important;
+}
+.select2-selection__rendered {
+  height: inherit !important;
+  display: flex !important;
+  align-items: center;
+  outline: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 0 !important;
+  right: 15px !important;
+  bottom: 0;
+  margin: auto;
+}
+.select2-selection__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:after {
+    content: url("images/icons/arrow-down-filter.svg");
+  }
+  b {
+    border: none !important;
   }
 }

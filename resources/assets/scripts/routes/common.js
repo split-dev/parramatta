@@ -12,15 +12,19 @@ export default {
       $('.shadow-bg').addClass('show');
       $('.mob-menu__close').addClass('active');
       $('.mob-menu__nav').addClass('show');
+      $('.mob-menu__error').css('display', 'none')
     });
     $('.mob-menu__close').click( function () {
       $('body').removeClass('blocked');
       $('.shadow-bg').removeClass('show');
       $('.mob-menu__close').removeClass('active');
       $('.mob-menu__nav').removeClass('show');
+      $('.mob-menu__error').css('display', 'block')
     });
     // eslint-disable-next-line no-unused-vars,no-undef
     var elem = new Foundation.AccordionMenu($('.accordion-menu'));
+    // eslint-disable-next-line no-unused-vars,no-undef
+    var elem2 = new Foundation.AccordionMenu($('.accordion-menu-lang'));
     //hover button
     $( '.btn-blue--animate').hover(
       function() {
@@ -37,6 +41,13 @@ export default {
 
     //mega-menu
     var myElement = document.querySelector('.mega-menu');
+    var headroom  = new Headroom(myElement);
+    headroom.init();
+
+    //mob-menu
+    // eslint-disable-next-line no-redeclare
+    var myElement = document.querySelector('.mob-menu');
+    // eslint-disable-next-line no-redeclare
     var headroom  = new Headroom(myElement);
     headroom.init();
 
@@ -59,6 +70,26 @@ export default {
       document.body.clientHeight, document.documentElement.clientHeight
     );
     $('.shadow-bg').css('height', (scrollHeight - 120) + 'px');
+
+    //loading anim
+    $('.loading-btn').click( function (e) {
+      e.preventDefault();
+      $(this).addClass('anim');
+    });
+    //filter news page
+    $('.loading-btn').click( function (e) {
+      e.preventDefault();
+      $(this).addClass('anim');
+    });
+
+    //error close
+    $('.mega-menu__error .close').click ( function () {
+      $('.mega-menu__error').addClass('hidden');
+    });
+    //cookie
+    $('.close__cookie').click ( function () {
+      $('.alert__cookie').addClass('hidden');
+    })
     },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

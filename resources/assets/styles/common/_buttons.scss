@@ -219,3 +219,41 @@ a[role="link"] {
   transition: opacity 0.17s cubic-bezier(0.65, 0.025, 0.67, 0.36), transform 0.17s cubic-bezier(0.65, 0.025, 0.67, 0.36);
   transition-delay: 0s;
 }
+
+.loading-btn {
+  position: relative;
+  display: flex;
+  max-width: 237px;
+  margin: auto;
+  color: $secondary;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-left: 55px;
+  &.anim {
+    img {
+      &:first-of-type {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    .hover {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  img {
+    position: absolute;
+    max-width: 35px;
+    height: 35px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: $transition;
+  }
+  .hover {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
