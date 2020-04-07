@@ -65,8 +65,39 @@
 }
 .map-page {
   .news:not(.bottom) {
+    background-color: #fff;
     .news-box {
       margin-bottom: 30px;
+      &:hover {
+        .news-box__link {
+          > span {
+            color: $secondary;
+          }
+        }
+        .arrow {
+          color: $secondary;
+        }
+      }
+      .news-box__link {
+        display: flex;
+        > span {
+          display: flex;
+          align-items: center;
+          margin-left: 15px;
+          margin-top: 0;
+          color: #333f48;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 22px;
+          transition: $transition;
+        }
+      }
+      &__info {
+        background-color: #f9f9f9;
+        .arrow {
+          display: flex;
+        }
+      }
     }
   }
 }

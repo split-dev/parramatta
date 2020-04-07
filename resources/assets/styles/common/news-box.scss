@@ -34,11 +34,6 @@
     bottom: 0;
     background-color: $secondary;
   }
-  &:not(.locate) {
-    .arrow {
-      display: inline-flex;
-    }
-  }
   &__bg {
     max-width: 387px;
     width: 100%;
@@ -93,6 +88,23 @@
           right: -1px;
         }
       }
+    }
+  }
+  &__bottom {
+    min-height: 86px;
+    margin-bottom: 49px;
+    strong {
+      color: #333f48;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 22px;
+      margin-right: 3px;
+    }
+    span {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #333f48;
     }
   }
   &:hover {

@@ -9,7 +9,64 @@
       "bg": "./images/background/map/1.jpg",
       "locate": "Dundas Valley",
       "name": "Acacia Park",
-      "desc": "Location: 42a Evans Road\nFacilities: Playground"
+      "locate-map": "42a Evans Road",
+      "result": "Playground"
+    },
+    {
+      "bg": "./images/background/map/2.jpg",
+      "locate": "Dundas",
+      "name": "Barnett Park",
+      "locate-map": "Rippon Avenue",
+      "result": "Playground"
+    },
+    {
+      "bg": "./images/background/map/3.jpg",
+      "locate": "Dundas",
+      "name": "Arrunga Street Reserve",
+      "locate-map": "5a Arrunga Street",
+      "result": "Playground"
+    },
+    {
+      "bg": "./images/background/map/4.jpg",
+      "locate": "Northmead",
+      "name": "Arthur Phillip Park",
+      "locate-map": "2a Edward Street",
+      "result": "Amenities, Barbecue, Cricket Wicket, Public Toilets, Playground, Outdoor Exercise Equipment, Sportsfield"
+    },
+    {
+      "bg": "./images/background/map/5.jpg",
+      "locate": "Winston Hills",
+      "name": "Barnett Park",
+      "locate-map": "Barnetts Road",
+      "result": "Off-leash Area"
+    },
+    {
+      "bg": "./images/background/map/6.jpg",
+      "locate": "North Parramatta",
+      "name": "Barton Park",
+      "locate-map": "114 Gladstone Road",
+      "result": "Amenities, Long Jump Pit, Outdoor Exercise Equipment, Playground, Sportsfield, Throwing cages"
+    },
+    {
+      "bg": "./images/background/map/7.jpg",
+      "locate": "North Parramatta",
+      "name": "Belmore Park",
+      "locate-map": "1a Pennant Hills Road",
+      "result": "Amenities, Cricket Nets, Cricket Wicket, Playground, Sportsfield"
+    },
+    {
+      "bg": "./images/background/map/8.jpg",
+      "locate": "Newington",
+      "name": "Blankers-Koen Park",
+      "locate-map": "Newington Boulevard",
+      "result": "Playground"
+    },
+    {
+      "bg": "./images/background/map/9.jpg",
+      "locate": "Carlington",
+      "name": "Bradley Drive Reserve",
+      "locate-map": "Bradley Drive",
+      "result": "Playground"
     }
   ],
   "news-bottom": [
