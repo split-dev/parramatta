@@ -6,58 +6,10 @@
   },
   "news": [
     {
-      "bg": "./images/news-page/one.jpg",
-      "date": "News Tag  |  1 January 2020",
-      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
-    },
-    {
-      "bg": "./images/news-page/two.jpg",
-      "date": "News Tag  |  1 January 2020",
-      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
-    },
-    {
-      "bg": "./images/news-page/three.jpg",
-      "date": "News Tag  |  1 January 2020",
-      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
-    },
-    {
-      "bg": "./images/news-page/four.jpg",
-      "date": "News Tag  |  1 January 2020",
-      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
-    },
-    {
-      "bg": "./images/news-page/five.jpg",
-      "date": "News Tag  |  1 January 2020",
-      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
-    },
-    {
-      "bg": "./images/news-page/six.jpg",
-      "date": "News Tag  |  1 January 2020",
-      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
-    },
-    {
-      "bg": "./images/news-page/seven.jpg",
-      "date": "News Tag  |  1 January 2020",
-      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
-    },
-    {
-      "bg": "./images/news-page/neun.jpg",
-      "date": "News Tag  |  1 January 2020",
-      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
-    },
-    {
-      "bg": "./images/news-page/10.jpg",
-      "date": "News Tag  |  1 January 2020",
-      "name": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit..."
+      "bg": "./images/background/map/1.jpg",
+      "locate": "Dundas Valley",
+      "name": "Acacia Park",
+      "desc": "Location: 42a Evans Road\nFacilities: Playground"
     }
   ],
   "news-bottom": [
