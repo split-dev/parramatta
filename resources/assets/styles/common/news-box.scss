@@ -93,6 +93,7 @@
   &__bottom {
     min-height: 86px;
     margin-bottom: 49px;
+    max-width: 100%;
     strong {
       color: #333f48;
       font-size: 15px;
@@ -101,6 +102,7 @@
       margin-right: 3px;
     }
     span {
+      width: 100%;
       font-size: 15px;
       font-weight: 400;
       line-height: 22px;

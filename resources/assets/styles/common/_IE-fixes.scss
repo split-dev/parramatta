@@ -1,0 +1,13 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .map__locate {
+    max-width: none !important;
+    width: auto !important;
+  }
+  .map__radio,
+  .map__checkbox {
+    flex-direction: row !important;
+  }
+  .select {
+    width: 39.3%;
+  }
+}
