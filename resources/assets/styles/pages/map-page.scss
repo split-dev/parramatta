@@ -205,6 +205,9 @@
     @media (max-width: 1199px) {
       max-height: 450px;
     }
+    @media (max-width: 640px) {
+      max-height: 380px;
+    }
     .select {
       width: 39.3%;
       display: flex;
@@ -258,6 +261,9 @@
     flex-wrap: wrap;
     @media (max-width: 1199px) {
       max-height: 450px;
+    }
+    @media (max-width: 640px) {
+      max-height: 290px;
     }
     .select-checkbox {
       width: 50%;

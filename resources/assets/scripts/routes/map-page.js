@@ -45,7 +45,7 @@ export default {
     //resize
     if ($(window).width() <= '525'){
       var string = document.querySelectorAll('.map__list label');
-      lookAllElements(string, 12);
+      lookAllElements(string, 11);
     } else {
       return;
     }
