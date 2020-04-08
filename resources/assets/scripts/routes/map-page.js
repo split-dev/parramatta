@@ -4,6 +4,14 @@ export default {
     $('.map__button').click( function (e) {
       e.preventDefault();
       $('.map__toggle').slideToggle();
+      if ($(this).attr('data-target') === 'false') {
+        $($('.map__button img')).attr('src','images/icons/close-filter.svg');
+        $(this).attr('data-target', 'true');
+      } else  {
+
+        $(this).attr('data-target', 'false');
+        $($('.map__button img')).attr('src','images/icons/setup-passive.svg');
+      }
     });
     //reset
     $('.map__reset').click( function (e) {
