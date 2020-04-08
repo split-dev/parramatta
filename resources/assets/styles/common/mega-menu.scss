@@ -173,6 +173,11 @@
         color: #002b49;
         font-weight: 600;
         margin-bottom: 15px;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+          color: $secondary;
+        }
       }
       li {
         margin-bottom: 10px;
