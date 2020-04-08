@@ -14,6 +14,11 @@
     </div>
   </div>
 {{/with}}
+<section class="map">
+  <div class="row column">
+    <div id="map"></div>
+  </div>
+</section>
 <section class="news">
   <div class="row">
     {{#each news}}
@@ -73,6 +78,189 @@
 <footer>
   {{> ../common/footer }}
 </footer>
+<script type="text/javascript">
 
+  // Функция initMap которая отрисует карту на странице
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -33.810208, lng: 150.9845809},
+      zoom: 12,
+      disableDefaultUI: true,
+      zoomControl: true,
+      style: [
+        {
+          "featureType": "landscape.natural.landcover",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape.natural.terrain",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.attraction",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.attraction",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.government",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.place_of_worship",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.station.airport",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.station.bus",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.station.rail",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        }
+      ]
+    });
+    var image = {
+      url: 'images/icons/marker-passive.svg',
+      scaledSize: new google.maps.Size(15, 20)
+    };
+    var imageOrange = {
+      url: 'images/icons/marker-active.svg',
+      scaledSize: new google.maps.Size(23, 30)
+    };
+    var marker = new google.maps.Marker({
+      position: {lat: -33.810208, lng: 150.9845809},
+      map: map,
+      icon: image,
+      title: 'Click here for more details'
+    });
+
+    //window
+    var info = [
+            '<div class="info-map">'+
+            '<strong>Barton Park</strong>'+
+    '<p>Amenities, Long Jump Pit, Outdoor Ex…  Find out more</p>'+
+    '<a href="#">Get directions</a>'+
+    '</div>'
+  ];
+    var activeInfoWindow;
+    let infowindow = new google.maps.InfoWindow({
+      content: '<div class="info-map">'+
+              '<strong>Barton Park</strong>'+
+              '<p>Amenities, Long Jump Pit, Outdoor Ex…  Find out more</p>'+
+              '<a href="#">Get directions</a>'+
+              '</div>',
+    });
+    marker.addListener('click', function() {
+      if (activeInfoWindow) {
+        activeInfoWindow.close();
+      }
+      infowindow.open(map, marker);
+      marker.setIcon(imageOrange);
+      activeInfoWindow = infowindow;
+    });
+    google.maps.event.addListener(map, "click", function(event) {
+      infowindow.close();
+      marker.setIcon(image)
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-_AEib7vHKXFg7mgGbQPhrweik5bo9X0&callback=initMap"></script>
 </body>
 </html>
