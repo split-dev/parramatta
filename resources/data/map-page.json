@@ -88,5 +88,189 @@
       "name": "Epping Christmas Pool Party",
       "desc": "City of Parramatta invites you to Epping Aquatic Centre for a Christmas Pool Party!"
     }
+  ],
+  "radio": [
+    {
+      "id": "radio1",
+      "name": "Beecroft"
+    },
+    {
+      "id": "radio2",
+      "name": "Carlingford"
+    },
+    {
+      "id": "radio3",
+      "name": "Constitution Hill"
+    },
+    {
+      "id": "radio4",
+      "name": "Dundas"
+    },
+    {
+      "id": "radio5",
+      "name": "Dundas Valley"
+    },
+    {
+      "id": "radio6",
+      "name": "Epping"
+    },
+    {
+      "id": "radio7",
+      "name": "Ermington"
+    },
+    {
+      "id": "radio8",
+      "name": "Granville"
+    },
+    {
+      "id": "radio9",
+      "name": "Harris Park"
+    },
+    {
+      "id": "radio10",
+      "name": "Mays Hill"
+    },
+    {
+      "id": "radio11",
+      "name": "Newington"
+    },
+    {
+      "id": "radio12",
+      "name": "North Parramatta"
+    },
+    {
+      "id": "radio13",
+      "name": "North Rocks"
+    },
+    {
+      "id": "radio14",
+      "name": "Northmead"
+    },
+    {
+      "id": "radio15",
+      "name": "Oatlands"
+    },
+    {
+      "id": "radio16",
+      "name": "Old Toongabbie"
+    },
+    {
+      "id": "radio17",
+      "name": "Parramatta"
+    },
+    {
+      "id": "radio18",
+      "name": "Pendle Hill"
+    },
+    {
+      "id": "radio19",
+      "name": "Rosehill"
+    },
+    {
+      "id": "radio20",
+      "name": "Rydalmere"
+    },
+    {
+      "id": "radio21",
+      "name": "Silverwater"
+    },
+    {
+      "id": "radio22",
+      "name": "Telopea"
+    },
+    {
+      "id": "radio23",
+      "name": "Toongabbie"
+    },
+    {
+      "id": "radio24",
+      "name": "Wentworthville"
+    },
+    {
+      "id": "radio25",
+      "name": "Winston Hills"
+    }
+  ],
+  "checkbox": [
+    {
+      "id": "check1",
+      "name": "Amenities"
+    },
+    {
+      "id": "check2",
+      "name": "Aquatic Centre"
+    },
+    {
+      "id": "check3",
+      "name": "Barbecue"
+    },
+    {
+      "id": "check4",
+      "name": "Basketball Court"
+    },
+    {
+      "id": "check5",
+      "name": "Bike Path"
+    },
+    {
+      "id": "check6",
+      "name": "Car Park"
+    },
+    {
+      "id": "check7",
+      "name": "Community Garden"
+    },
+    {
+      "id": "check8",
+      "name": "Cricket Nets"
+    },
+    {
+      "id": "check9",
+      "name": "Cricket Wicket"
+    },
+    {
+      "id": "check10",
+      "name": "Croquet Court"
+    },
+    {
+      "id": "check11",
+      "name": "Historical Site / Memorial"
+    },
+    {
+      "id": "check12",
+      "name": "Netball Court"
+    },
+    {
+      "id": "check13",
+      "name": "Off-Leash Area"
+    },
+    {
+      "id": "check14",
+      "name": "Outdoor Exercise Equipment"
+    },
+    {
+      "id": "check15",
+      "name": "Picnic Facilities"
+    },
+    {
+      "id": "check16",
+      "name": "Playground"
+    },
+    {
+      "id": "check17",
+      "name": "Public Toilets"
+    },
+    {
+      "id": "check18",
+      "name": "Sportsfield"
+    },
+    {
+      "id": "check19",
+      "name": "Tennis Court"
+    },
+    {
+      "id": "check20",
+      "name": "Walking Track"
+    }
   ]
 }

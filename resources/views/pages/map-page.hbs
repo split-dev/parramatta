@@ -15,7 +15,39 @@
   </div>
 {{/with}}
 <section class="map">
-  <div class="row column">
+  <div class="row">
+    <div class="map__filter">
+      <div class="map__top-filter column">
+        <a href="#" class="map__button"> <img src="images/icons/setup-passive.svg" alt="setup"> Filter</a>
+        <a href="#" class="map__reset"><img src="images/icons/refresh-passive.svg"><img src="images/icons/anim-h.gif" alt="" class="hover">Reset filters</a>
+      </div>
+      <div class="map__toggle">
+        <div class="map__list">
+          <div class="map__locate column">
+            <h2>Locations</h2>
+            <div class="map__radio">
+              {{#each radio}}
+                <div class="select">
+                  <input type="radio" id="{{id}}" name="radio1"/>
+                  <label for="{{id}}">{{name}}</label>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+          <div class="map__facilites column">
+            <h2>Facilities</h2>
+            <div class="map__checkbox">
+              {{#each checkbox}}
+                <div class="select-checkbox">
+                  <input type="checkbox" id="{{id}}"/>
+                  <label for="{{id}}">{{name}}</label>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="map"></div>
   </div>
 </section>
@@ -244,7 +276,7 @@
       content: '<div class="info-map">'+
               '<strong>Barton Park</strong>'+
               '<p>Amenities, Long Jump Pit, Outdoor Ex…  Find out more</p>'+
-              '<a href="#">Get directions</a>'+
+              '<a href="#">Get directions <img src="images/icons/arrow-next.svg" alt="arrow"></a>'+
               '</div>',
     });
     marker.addListener('click', function() {
