@@ -87,6 +87,9 @@
       ul {
         transform: translateY(0);
       }
+      &:after {
+        content: "-";
+      }
     }
     &:before {
       content: "";
@@ -100,6 +103,7 @@
     }
     &:after {
       content: url("images/icons/arrow-white.svg");
+      width: 15px;
       height: 7px;
       @include center;
       padding-left: 7px;
@@ -123,11 +127,15 @@
         margin-bottom: 10px !important;
         &.active {
           a {
-            font-weight: 800;
+            font-weight: 900;
           }
         }
         a {
           text-align: left;
+          transition: $transition;
+          &:hover {
+            color: $secondary;
+          }
         }
       }
     }
@@ -241,7 +249,7 @@
         }
       }
       li {
-        margin-bottom: 19px;
+        margin-bottom: 10px;
         &:last-of-type {
           margin-bottom: 0;
         }

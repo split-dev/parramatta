@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="22px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>move-up</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Submit-an-Event-Form-(Custom)" transform="translate(-224.000000, -2171.000000)" stroke="#A2AAAD" stroke-width="1.86046512">
+            <g id="move-up" transform="translate(225.000000, 2172.000000)">
+                <line x1="10.2325581" y1="15.3488372" x2="10.2325581" y2="0" id="Path"></line>
+                <polyline id="Path" points="4.18604651 6.04651163 10.2325581 0 16.2790698 6.04651163"></polyline>
+                <line x1="0" y1="19.5348837" x2="20.4651163" y2="19.5348837" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

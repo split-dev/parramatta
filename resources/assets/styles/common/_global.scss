@@ -120,3 +120,67 @@ ul {
     }
   }
 }
+.related-box {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 25px;
+  strong {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  ul {
+    li {
+      a {
+        color: #333f48;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        transition: $transition;
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+.help-box {
+  background-color: #f9f9f9;
+  padding: 25px 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: $transition;
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  span {
+    color: #002b49;
+    font-size: 15px;
+    font-weight: 700 !important;
+    line-height: 22px;
+    display: block;
+    margin-bottom: 16px !important;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    a {
+      padding: 5px 25px;
+      border: 1px solid #a2aaad;
+      background-color: #fff;
+      color: #a2aaad;
+      font-size: 15px;
+      font-weight: 600;
+      &:first-of-type {
+        margin-right: 15px;
+      }
+      &:hover {
+        border: 1px solid $secondary;
+        background-color: $secondary;
+        color: white;
+      }
+    }
+  }
+}

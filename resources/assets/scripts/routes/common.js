@@ -93,8 +93,58 @@ export default {
     //cookie
     $('.close__cookie').click ( function () {
       $('.alert__cookie').addClass('hidden');
+    });
+    //help box
+    $('.help-box .no').click( function (e) {
+      e.preventDefault();
+      $('.help-box').addClass('hide');
+    });
+    //text area
+    $('.textarea textarea').on('input',function(){
+      let count = $('.textarea textarea').val().length;
+      $('.textarea .current').text(count);
+    });
+    //max
+    (function($) {
+      $.fn.extend( {
+        limiter: function(limit, elem) {
+          $(this).on('keyup focus', function() {
+            setCount(this, elem);
+          });
+          // eslint-disable-next-line no-unused-vars
+          function setCount(src, elem) {
+            var chars = src.value.length;
+            if (chars > limit) {
+              src.value = src.value.substr(0, limit);
+              chars = limit;
+            }
+          }
+          setCount($(this)[0], elem);
+        },
+      });
+    })(jQuery);
+    $('.textarea textarea').limiter(500);
+    //size load
+    document.getElementById('customFile').addEventListener('change', updateSize);
+    function updateSize() {
+      var file = document.getElementById('customFile').files[0],
+        // eslint-disable-next-line no-unused-vars
+        parts = file.name.split('.');
+      let size = ((file.size /1024) / 1024);
+      size.toFixed(2);
+      let fileName = $('.custom-file-input').val().split('\\').pop();
+      if (size < 5) {
+        $('.file-name').text(fileName);
+        $('.file-load').fadeIn();
+      }
+    }
+    //remove
+    $('.file-load .remove').click( function (e) {
+      e.preventDefault();
+      $('.file-load').fadeOut();
+      $('#customFile').val('');
     })
-    },
+  },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
   },

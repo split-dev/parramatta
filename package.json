@@ -59,6 +59,7 @@
     "yargs": "~15.3.1"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "buble": "^0.19.8",
     "dotenv": "^8.2.0",
     "extract-text-webpack-plugin": "4.0.0-beta.0",
@@ -70,6 +71,7 @@
     "image-webpack-loader": "^6.0.0",
     "jquery": "^3.3.1",
     "jquery-lazy": "^1.7.10",
+    "jquery-ui": "^1.12.1",
     "regenerator-runtime": "^0.13.5",
     "select2": "^4.0.13",
     "svg4everybody": "^2.1.9",

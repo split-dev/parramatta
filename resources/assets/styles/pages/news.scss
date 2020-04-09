@@ -127,8 +127,16 @@
       height: 40px;
       border: 1px solid #a2aaad;
       margin-right: 15px;
+      cursor: pointer;
       transition: $transition;
       @include center;
+      &:hover {
+        border: 1px solid #00b8de;
+        background-color: #00b8de;
+        a {
+          color: white;
+        }
+      }
       &.active {
         border: 1px solid #00b8de;
         background-color: #00b8de;
@@ -177,40 +185,41 @@
       }
     }
   }
+  //select2
+
+  .select2-search--dropdown {
+    display: none !important;
+  }
+  .select2-selection {
+    height: 60px !important;
+    border: 2px solid #e8e8e7 !important;
+    background-color: #fff !important;
+    border-radius: 0 !important;
+    outline: none !important;
+  }
+  .select2-selection__rendered {
+    height: inherit !important;
+    display: flex !important;
+    align-items: center;
+    outline: none;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 0 !important;
+    right: 15px !important;
+    bottom: 0;
+    margin: auto;
+  }
+  .select2-selection__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
+      content: url("images/icons/arrow-down-filter.svg");
+    }
+    b {
+      border: none !important;
+    }
+  }
 }
 
-//select2
 
-.select2-search--dropdown {
-  display: none !important;
-}
-.select2-selection {
-  height: 60px !important;
-  border: 2px solid #e8e8e7 !important;
-  background-color: #fff !important;
-  border-radius: 0 !important;
-  outline: none !important;
-}
-.select2-selection__rendered {
-  height: inherit !important;
-  display: flex !important;
-  align-items: center;
-  outline: none;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  top: 0 !important;
-  right: 15px !important;
-  bottom: 0;
-  margin: auto;
-}
-.select2-selection__arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:after {
-    content: url("images/icons/arrow-down-filter.svg");
-  }
-  b {
-    border: none !important;
-  }
-}

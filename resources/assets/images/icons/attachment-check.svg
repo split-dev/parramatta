@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Submit-an-Event-Form-(Custom)" transform="translate(-210.000000, -2216.000000)" fill="#00B8DE" fill-rule="nonzero">
+            <g id="check-single" transform="translate(210.000000, 2216.000000)">
+                <path d="M4,11 C3.73480519,11 3.48049273,10.8945494 3.293,10.707 L0.293,7.707 C-0.0859722095,7.31462111 -0.0805523739,6.69091522 0.305181425,6.30518142 C0.690915223,5.91944763 1.31462111,5.91402779 1.707,6.293 L3.907,8.493 L10.21,0.386 C10.5491028,-0.0503049357 11.177695,-0.12910281 11.614,0.21000002 C12.0503049,0.549102851 12.1291028,1.17769505 11.79,1.614 L4.79,10.614 C4.61408491,10.8413124 4.34886378,10.9819379 4.062,11 L4,11 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
