@@ -166,6 +166,13 @@
       }
       svg {
         margin-left: 10px;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+          * {
+            fill: $secondary;
+          }
+        }
       }
     }
     &__img {

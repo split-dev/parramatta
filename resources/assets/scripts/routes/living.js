@@ -1,5 +1,5 @@
 import 'select2/dist/js/select2.min'
-import 'air-datepicker/dist/js/datepicker.min'
+import 'air-datepicker/dist/js/datepicker'
 import 'air-datepicker/dist/js/i18n/datepicker.en'
 import 'jquery-ui/ui/widgets/slider'
 
@@ -108,6 +108,12 @@ export default {
         text: 'Please select…', //Should be text not placeholder
       },
     });
+    //open air date
+    $('.date svg').click( function () {
+      let element = $(this).prev();
+      var myDatepicker = $(element).datepicker().data('datepicker');
+      myDatepicker.show();
+    })
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

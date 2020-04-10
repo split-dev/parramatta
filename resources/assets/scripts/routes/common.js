@@ -54,7 +54,6 @@ export default {
     $( 'ul.mega-menu__nav .dropdown-link' ).hover(
       function() {
         $( 'ul.mega-menu__nav >li' ).not(this).addClass('hover');
-        console.log(this)
         if ($(this).hasClass('dropdown-link')) {
           $('.shadow-bg').addClass('show');
         }
