@@ -134,6 +134,19 @@
           border: 1px solid #a2aaad;
           border-radius: 50%;
         }
+        &:after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          left: 5px;
+          top: 1px;
+          bottom: 0;
+          margin: auto;
+          height: 10px;
+          background-color: #fff;
+          border-radius: 50%;
+          opacity: 0;
+        }
       }
       input {
         margin: 0;
@@ -142,6 +155,9 @@
           &:before {
             background-color: #00b8de;
             border: 1px solid #00b8de;
+          }
+          &:after {
+            opacity: 1;
           }
         }
       }
@@ -345,7 +361,8 @@
 .ui-slider a:focus {
   outline: none;
 }
-.living {
+.living,
+.child {
   //select2
   .selection {
     width: 100%;

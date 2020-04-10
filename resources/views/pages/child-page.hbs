@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="child">
+{{> ../common/mega-menu }}
+{{#with topInfo}}
+  <div class="category-bg">
+    <div class="category-bg__info" style="background-image: url(' {{image}} ')"></div>
+    <div class="category-bg__box">
+      <h3>{{category}}</h3>
+      <h1>{{title}}</h1>
+    </div>
+  </div>
+{{/with}}
+<section class="content">
+  <div class="row">
+    <div class="small-12 medium-7 large-6 large-offset-1 column">
+      <h2>Heading 2 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h2>
+      <span>Paragraph text ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</span>
+      <form class="form">
+        <span>Text field</span>
+        <input type="text">
+        <span>Drop-down menu</span>
+        <select class="js-example-basic-filter" name="state">
+          <option value="0" disabled  selected>Please select…</option>
+          <option value="AL">Council News</option>
+          <option value="WY">Media Releases</option>
+          <option value="WA">On Exhibition</option>
+        </select>
+        <span>Event description</span>
+        <span>Date selection</span>
+        <div class="date">
+          <input type='text' class='datepicker-start' data-date-format="d  /  MM  /  yyyy" placeholder="Day  /  Month  /  Year"/>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="24px" viewBox="0 0 25 24" version="1.1">
+            <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Submit-an-Event-Form-(Custom)" transform="translate(-405.000000, -846.000000)" fill="#A2AAAD">
+                <g id="Group-5" transform="translate(405.000000, 846.000000)">
+                  <path d="M4.84133663,1.22311881 C4.84133663,-0.26009901 7.02747525,-0.26009901 7.02747525,1.22311881 L7.02747525,5.51816832 C7.02747525,7.00138614 4.84133663,7.00138614 4.84133663,5.51816832 L4.84133663,1.22311881 Z" id="Fill-1"/>
+                  <path d="M19.8329208,1.22311881 C19.8329208,-0.26009901 17.6467822,-0.26009901 17.6467822,1.22311881 L17.6467822,5.51816832 C17.6467822,7.00138614 19.8329208,7.00138614 19.8329208,5.51816832 L19.8329208,1.22311881 Z" id="Fill-2"/>
+                  <path d="M24.7524752,10.5933168 L24.7524752,19.6512376 C24.7524752,21.8373767 22.9569554,23.6339116 20.769802,23.6339116 L3.98168317,23.6339116 C1.7955453,23.6339116 -0.000989555198,21.8383918 -0.000989555198,19.6512376 L-0.000989555198,10.5933168 L24.7524752,10.5933168 Z" id="Fill-3"/>
+                  <path d="M3.98267327,3.40915842 L3.98267327,5.5169802 C3.98267327,8.09371287 7.88688119,8.09371287 7.88688119,5.5169802 L7.88688119,3.40915842 L16.7881188,3.40915842 L16.7881188,5.5169802 C16.7881188,8.17217822 20.7707921,8.17217822 20.7707921,5.5169802 L20.7707921,3.40915842 C22.9569307,3.40915842 24.7534653,5.20467822 24.7534653,7.39183168 L24.7534653,9.49965347 L0.000989791089,9.49965347 L0.000989791089,7.39183168 C0.000989791089,5.12737624 1.79650965,3.40915842 3.98366337,3.40915842 L3.98267327,3.40915842 Z" id="Fill-4"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <span>Checkbox</span>
+        <div class="select-checkbox">
+          <input type="checkbox" id="check1"/>
+          <label for="check1">Lorem ipsum</label>
+        </div>
+        <div class="select-checkbox">
+          <input type="checkbox" id="check2"/>
+          <label for="check2">Dolor sit</label>
+        </div>
+        <span>Radio buttons</span>
+        <div class="select">
+          <input type="radio" id="radio1" name="radio1"/>
+          <label for="radio1">Lorem ipsum</label>
+        </div>
+        <div class="select">
+          <input type="radio" id="radio2" name="radio1"/>
+          <label for="radio2">Dolor sit</label>
+        </div>
+        <div class="select-checkbox">
+          <input type="checkbox" id="check3"/>
+          <label for="check3">Required check box e.g. <a href="#">Terms & Conditions</a></label>
+        </div>
+        <span>Text area</span>
+        <div class="textarea">
+          <textarea></textarea>
+          <span class="count">
+            <span><span class="current">0</span> of <span class="max">500</span> characters</span>
+          </span>
+        </div>
+        <span>Start time</span>
+        <div class="time">
+          <span>00:00</span>
+          <div id="time-range1">
+            <div class="sliders_step1">
+              <div id="slider-range-line-1"></div>
+            </div>
+          </div>
+          <span>23:59</span>
+        </div>
+        <span>Upload a file</span>
+        <div class="img-box">
+          <div class="form__img">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label for="customFile"> <img src="images/icons/download.svg"> <img src="images/icons/white-download.svg"> Choose a file…</label>
+            <div class="file-load">
+              <span class="file-name"></span>
+              <a href="#" class="remove">Remove file</a>
+            </div>
+          </div>
+          <div class="form__img">
+            <input type="file" class="custom-file-input" id="customFile2">
+            <label for="customFile2"> <img src="images/icons/download.svg"> <img src="images/icons/white-download.svg"> Choose a file…</label>
+            <div class="file-load">
+              <span class="file-name"></span>
+              <a href="#" class="remove">Remove file</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="add__button">Add more button</a>
+        <a href="#" class="btn-blue--animate" data-state="">
+    <span>
+      <span>S</span>
+      <span>u</span>
+      <span>b</span>
+      <span>m</span>
+      <span>i</span>
+      <span>t</span>
+      <span>&nbsp;</span>
+      <span>m</span>
+      <span>y</span>
+      <span>&nbsp;</span>
+      <span>e</span>
+      <span>v</span>
+      <span>e</span>
+      <span>n</span>
+      <span>t</span>
+    </span>
+          <span>
+      <span>S</span>
+      <span>u</span>
+      <span>b</span>
+      <span>m</span>
+      <span>i</span>
+      <span>t</span>
+      <span>&nbsp;</span>
+      <span>m</span>
+      <span>y</span>
+      <span>&nbsp;</span>
+      <span>e</span>
+      <span>v</span>
+      <span>e</span>
+      <span>n</span>
+      <span>t</span>
+    </span>
+        </a>
+      </form>
+    </div>
+    <div class="small-12 medium-3 medium-offset-1 large-3 large-offset-1 column">
+      {{> ../common/rel_content }}
+      {{> ../common/help-box }}
+    </div>
+  </div>
+</section>
+<section class="news events">
+  <div class="row column">
+    <h2>Upcoming events</h2>
+  </div>
+  <div class="row">
+    {{#each news-bottom}}
+      {{> ../partials/news-box }}
+    {{/each}}
+  </div>
+  <a href="#" class="btn-blue--animate" data-state="">
+    <span>
+      <span>V</span>
+      <span>i</span>
+      <span>e</span>
+      <span>w</span>
+      <span>&nbsp;</span>
+      <span>a</span>
+      <span>l</span>
+      <span>l</span>
+      <span>&nbsp;</span>
+      <span>e</span>
+      <span>v</span>
+      <span>e</span>
+      <span>n</span>
+      <span>t</span>
+      <span>s</span>
+    </span>
+    <span>
+      <span>V</span>
+      <span>i</span>
+      <span>e</span>
+      <span>w</span>
+      <span>&nbsp;</span>
+      <span>a</span>
+      <span>l</span>
+      <span>l</span>
+      <span>&nbsp;</span>
+      <span>e</span>
+      <span>v</span>
+      <span>e</span>
+      <span>n</span>
+      <span>t</span>
+      <span>s</span>
+    </span>
+  </a>
+</section>
+{{> ../common/cta }}
+{{> ../common/mobile-nav }}
+<footer>
+  {{> ../common/footer }}
+</footer>
+</body>
+</html>

@@ -20,6 +20,10 @@
     {
       "title": "Living page",
       "url": "/living.html"
+    },
+    {
+      "title": "Child page",
+      "url": "/child-page.html"
     }
   ]
 }

@@ -16,6 +16,7 @@ import home from './routes/index';
 import news from './routes/news-page'
 import map from './routes/map-page'
 import living from './routes/living'
+import child from './routes/child'
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -30,6 +31,7 @@ const routes = new Router({
   'newsPage': news,
   'mapPage': map,
   'living': living,
+  'child': child,
 });
 
 // Load Events
