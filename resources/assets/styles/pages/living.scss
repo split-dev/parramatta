@@ -192,7 +192,7 @@
       }
     }
     &__img {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       .select-checkbox {
         margin-top: 21px;
       }
@@ -215,6 +215,18 @@
             bottom: 0;
             margin: auto;
           }
+        }
+      }
+      .remove {
+        color: #a2aaad;
+        text-decoration: underline;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 13px;
+        transition: $transition;
+        &:hover {
+          color: $secondary;
         }
       }
       .custom-file-input {

@@ -88,23 +88,15 @@
         <span>Upload a file</span>
         <div class="img-box">
           <div class="form__img">
-            <input type="file" class="custom-file-input" id="customFile">
+            <input type="file" class="custom-file-input" onchange="element(this)" id="customFile">
             <label for="customFile"> <img src="images/icons/download.svg"> <img src="images/icons/white-download.svg"> Choose a file…</label>
             <div class="file-load">
               <span class="file-name"></span>
-              <a href="#" class="remove">Remove file</a>
-            </div>
-          </div>
-          <div class="form__img">
-            <input type="file" class="custom-file-input" id="customFile2">
-            <label for="customFile2" onclick="element(this)"> <img src="images/icons/download.svg"> <img src="images/icons/white-download.svg"> Choose a file…</label>
-            <div class="file-load">
-              <span class="file-name"></span>
-              <a href="#" class="remove">Remove file</a>
+              <span class="remove" data-file="customFile" onclick="remove(this)">Remove file</span>
             </div>
           </div>
         </div>
-        <a href="#" class="add__button">Add more button</a>
+        <a href="#" class="add__button"> <img src="images/icons/plus-gray.svg"> <img src="images/icons/plus-white.svg"> Add more button</a>
         <a href="#" class="btn-blue--animate" data-state="">
     <span>
       <span>S</span>
@@ -200,5 +192,27 @@
 <footer>
   {{> ../common/footer }}
 </footer>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script>
+  function element(event) {
+    let element = '#' + event.getAttribute("id");
+    addFile(element)
+  }
+  function addFile(item) {
+    let fileName = $(item).val().replace(/.*\\(.+)/, '$1');
+    let element = $(item).parent().find($('.file-name'));
+    let fead = $(item).parent().find($('.file-load'));
+    element.text(fileName);
+    $(fead).fadeIn();
+  }
+  function remove(event) {
+    let element = '#' + event.getAttribute("data-file");
+    $(element).parent().find($('.file-load')).fadeOut();
+    $(element).val('');
+  }
+</script>
 </body>
 </html>
