@@ -1,0 +1,61 @@
+{
+  "topInfo": {
+    "image": "./images/background/events.jpg"
+  },
+  "news": [
+    {
+      "bg": "./images/background/events/one.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Viverra aliquet eget sit",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua…"
+    },
+    {
+      "bg": "./images/background/events/two.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Viverra aliquet eget sit",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua…"
+    },
+    {
+      "bg": "./images/background/events/three.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Viverra aliquet eget sit amet tellus eget magna",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
+    },
+    {
+      "bg": "./images/background/events/four.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Viverra aliquet eget sit",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua…"
+    },
+    {
+      "bg": "./images/background/events/five.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Viverra aliquet eget sit",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua…"
+    },
+    {
+      "bg": "./images/background/events/six.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Viverra aliquet eget sit amet tellus eget magna",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
+    },
+    {
+      "bg": "./images/background/events/seven.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Viverra aliquet eget sit",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua…"
+    },
+    {
+      "bg": "./images/background/events/8.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Viverra aliquet eget sit",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua…"
+    },
+    {
+      "bg": "./images/background/events/9.jpg",
+      "date": "News Tag  |  1 January 2020",
+      "name": "Viverra aliquet eget sit amet tellus eget magna",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
+    }
+  ]
+}

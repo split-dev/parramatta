@@ -1,0 +1,187 @@
+.events {
+  &__info {
+    height: 345px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 700px) {
+      height: 421px;
+      background-image: url("images/background/events/events-mob.jpg") !important;
+    }
+    > div {
+      height: 100%;
+    }
+    h1 {
+      display: block;
+      width: 100%;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 46px;
+      margin-bottom: 25px;
+    }
+  }
+  &__sort-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+    @media (max-width: 1040px) {
+      max-width: 700px;
+      margin: auto;
+    }
+    input {
+      outline: none;
+      box-shadow: none;
+      &:first-of-type {
+        width: 100%;
+        max-width: 320px;
+        height: 60px;
+        border: 1px solid #a2aaad;
+        background-color: #fff;
+        padding: 17px 20px;
+      }
+    }
+  }
+  &__key {
+    margin-right: 10px !important;
+  }
+  &__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @media (max-width: 1199px) {
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      a {
+        margin-top: 20px;
+      }
+    }
+    @media (max-width: 1040px) {
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      > *:not(.btn-blue--animate) {
+        margin: 10px 20px 10px 0 !important;
+        width: 50% !important;
+        max-width: 47% !important;
+        input {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      a {
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 700px) {
+      flex-direction: column;
+      align-items: flex-start;
+      > *:not(.btn-blue--animate) {
+        margin: 0 0 10px 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        input {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      a {
+        margin-left: 0 !important;
+      }
+    }
+    > input {
+      margin-right: 0;
+      margin-bottom: 0 !important;
+    }
+    a {
+      max-width: 198px;
+      width: 100%;
+      margin-left: 10px;
+      height: 60px;
+    }
+  }
+  &__date {
+    display: inline-block;
+    max-width: 310px;
+    width: 100%;
+    position: relative;
+    margin-right: 10px;
+    input {
+      width: 100%;
+      height: 60px;
+      margin-bottom: 0 !important;
+      border: 1px solid #a2aaad;
+      background-color: #fff;
+      padding: 17px 20px;
+    }
+    img {
+      position: absolute;
+      right: 17px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
+.events-page {
+  overflow-x: hidden;
+  .news-box {
+    margin-bottom: 30px;
+  }
+  //select2
+  .js-example-basic-filter {
+    @media (max-width: 700px) {
+      max-width: calc(100% - 30px) !important;
+    }
+  }
+  .select2.select2-container.select2-container--default {
+    max-width: 360px !important;
+    @media (max-width: 700px) {
+      max-width: 100% !important;
+    }
+  }
+  .select2-search--dropdown {
+    display: none !important;
+  }
+  .select2-selection {
+    max-width: 360px !important;
+    height: 60px !important;
+    border: 1px solid #a2aaad !important;
+    background-color: #fff !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    @media (max-width: 700px) {
+      max-width: 100% !important;
+    }
+  }
+  .select2-dropdown {
+    border-radius: 0 !important;
+  }
+  .select2-selection__rendered {
+    height: inherit !important;
+    display: flex !important;
+    align-items: center;
+    outline: none;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 0 !important;
+    right: 15px !important;
+    bottom: 0;
+    margin: auto;
+  }
+  .select2-selection__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
+      content: url("images/icons/arrow-down-filter.svg");
+    }
+    b {
+      border: none !important;
+    }
+  }
+}

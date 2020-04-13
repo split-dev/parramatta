@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body class="events-page">
+{{> ../common/mega-menu }}
+{{#with topInfo}}
+  <div class="events">
+    <div class="events__info" style="background-image: url(' {{image}} ')">
+      <div class="row column">
+        <div class="events__sort-box">
+          <h1>Events</h1>
+          <div class="events__box">
+            <input type="text" class="events__key" placeholder="Enter keywords">
+            <div class="events__date">
+              <input type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" placeholder="Select dates"/>
+              <img src="images/icons/events-calendar.svg" alt="calendar">
+            </div>
+            <select class="js-example-basic-filter" name="state">
+              <option value="0" disabled  selected>Select categories</option>
+              <option value="AL">Council News</option>
+              <option value="WY">Media Releases</option>
+              <option value="WA">On Exhibition</option>
+            </select>
+            <a href="#" class="btn-blue--animate" data-state="">
+    <span>
+      <span>S</span>
+      <span>e</span>
+      <span>a</span>
+      <span>r</span>
+      <span>c</span>
+      <span>h</span>
+      <span>&nbsp;</span>
+      <span>E</span>
+      <span>v</span>
+      <span>e</span>
+      <span>n</span>
+      <span>t</span>
+      <span>s</span>
+    </span>
+              <span>
+      <span>S</span>
+      <span>e</span>
+      <span>a</span>
+      <span>r</span>
+      <span>c</span>
+      <span>h</span>
+      <span>&nbsp;</span>
+      <span>E</span>
+      <span>v</span>
+      <span>e</span>
+      <span>n</span>
+      <span>t</span>
+      <span>s</span>
+    </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/with}}
+<section class="news">
+  <div class="row">
+    {{#each news}}
+      {{> ../partials/news-box }}
+    {{/each}}
+  </div>
+  <a href="#" class="loading-btn"><img src="images/icons/anim.svg"><img src="images/icons/anim-h.gif" alt="" class="hover">Loading more</a>
+</section>
+{{> ../common/cta }}
+{{> ../common/mobile-nav }}
+<footer>
+  {{> ../common/footer }}
+</footer>
+
+</body>
+</html>

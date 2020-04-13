@@ -13,10 +13,11 @@ import Router from './util/Router';
 import common from './routes/common';
 import Detection from './util/Detection';
 import home from './routes/index';
-import news from './routes/news-page'
-import map from './routes/map-page'
-import living from './routes/living'
-import child from './routes/child'
+import news from './routes/news-page';
+import map from './routes/map-page';
+import living from './routes/living';
+import child from './routes/child';
+import events from './routes/events'
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -32,6 +33,7 @@ const routes = new Router({
   'mapPage': map,
   'living': living,
   'child': child,
+  'eventsPage': events,
 });
 
 // Load Events

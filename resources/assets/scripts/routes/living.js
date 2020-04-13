@@ -7,9 +7,11 @@ export default {
   init() {
     $('.datepicker-start').datepicker({
       language: 'en',
+      autoClose: true,
     });
     $('.datepicker-end').datepicker({
       language: 'en',
+      autoClose: true,
     });
     //one time
     $('#slider-range-line-1').slider({
