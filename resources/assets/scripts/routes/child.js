@@ -97,7 +97,11 @@ export default {
         '            </div>\n' +
         '          </div>');
       number = number + 1;
-    })
+    });
+    // eslint-disable-next-line no-unused-vars
+    function element() {
+      console.log(333)
+    }
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
