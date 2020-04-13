@@ -314,6 +314,17 @@
   height: 1px;
   background-color: #d0d0ce;
   border: 3px solid #d0d0ce;
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d0d0ce;
+  }
 }
 .ui-slider-horizontal .ui-slider-range {
   top: -1px;
