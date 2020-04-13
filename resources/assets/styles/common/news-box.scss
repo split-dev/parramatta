@@ -1,5 +1,5 @@
 .news {
-  background-color: #f9f9f9;
+  background-color: #fff;
   padding: 60px 0;
   @media (max-width: 640px) {
     padding: 40px 0;
@@ -14,8 +14,9 @@
     font-weight: 600;
   }
   &.events {
-    background: white !important;
+    background-color: #f9f9f9;
     .news-box {
+      background: white !important;
       &:hover {
         .news-box__bg {
           transform: scale(1.15);

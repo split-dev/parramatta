@@ -1,0 +1,33 @@
+.article-content {
+  margin-top: 60px;
+  h2 {
+    color: #002b49;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  p {
+    color: #333f48;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+.image-box {
+  margin: 40px 0 25px 0;
+  span {
+    display: block;
+    color: #a2aaad;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+.article {
+  .news {
+    margin-top: 60px;
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+  }
+}

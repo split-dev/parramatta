@@ -28,6 +28,10 @@
     {
       "title": "Events page",
       "url": "/events.html"
+    },
+    {
+      "title": "Article page",
+      "url": "/article.html"
     }
   ]
 }
