@@ -211,6 +211,9 @@
   function remove(event) {
     let element = '#' + event.getAttribute("data-file");
     $(element).parent().find($('.file-load')).fadeOut();
+    setTimeout(function(){
+      $(element).parent().find($('.file-load')).css('display','none');
+    }, 1000);
     $(element).val('');
   }
 </script>
