@@ -141,6 +141,9 @@ export default {
     $('.file-load .remove').click( function (e) {
       e.preventDefault();
       $('.file-load').fadeOut();
+      setTimeout(function(){
+        $(this).parent().find($('.file-load')).css('display','none');
+      }, 500);
       $('#customFile').val('');
     });
   },
