@@ -30,6 +30,21 @@
       }
     }
   }
+  &.zoom {
+    .news-box {
+      &:hover {
+        .news-box__bg {
+          transform: scale(1.15);
+        }
+      }
+      .news-box__over {
+        overflow: hidden;
+        .news-box__bg {
+          transition: 0.6s;
+        }
+      }
+    }
+  }
 }
 .news-box {
   max-width: 385px;
