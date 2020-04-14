@@ -240,6 +240,17 @@ a[role="link"] {
     .hover {
       visibility: visible;
       opacity: 1;
+      animation-name: oval;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      @keyframes oval {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(700deg);
+        }
+      }
     }
   }
   img {
