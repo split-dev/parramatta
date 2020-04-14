@@ -3512,6 +3512,11 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
+es6-promise@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-1.0.0.tgz#f90d3629faa7c26166ae4df77c89bacdeb8dca7f"
+  integrity sha1-+Q02KfqnwmFmrk33fIm6zeuNyn8=
+
 escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
@@ -5812,6 +5817,11 @@ jquery-ui@^1.12.1:
   resolved "https://registry.yarnpkg.com/jquery-ui/-/jquery-ui-1.12.1.tgz#bcb4045c8dd0539c134bc1488cdd3e768a7a9e51"
   integrity sha1-vLQEXI3QU5wTS8FIjN0+dop6nlE=
 
+jquery.sticky@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/jquery.sticky/-/jquery.sticky-0.2.1.tgz#0009712b0bce5509211cc31457f95b40ba9a8b5d"
+  integrity sha1-AAlxKwvOVQkhHMMUV/lbQLqai10=
+
 jquery@>=1.7.2, "jquery@>=2.0.0 <4.0.0", jquery@^3.3.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
@@ -6769,6 +6779,11 @@ mkdirp@^0.5.3:
   integrity sha512-iG9AK/dJLtJ0XNgTuDbSyNS3zECqDlAhnQW4CsNxBG3LQJBbHmRX1egw39DmtOdCAqY+dKXV+sgPgilNWUKMVw==
   dependencies:
     minimist "^1.2.5"
+
+moment@^2.6.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
 
 most@^1.7.3:
   version "1.7.3"
@@ -9684,6 +9699,21 @@ statuses@~1.4.0:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.4.0.tgz#bb73d446da2796106efcc1b601a253d6c46bd087"
   integrity sha512-zhSCtt8v2NDrRlPQpCNtw/heZLtfUDqxBM1udqikb/Hbk52LK4nQSwr10u77iopCW5LsyHpuXS0GnEc48mLeew==
 
+sticky-sidebar@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/sticky-sidebar/-/sticky-sidebar-3.3.1.tgz#142bf6b64c2b416e4b707ebf8f09b8b5a5043877"
+  integrity sha1-FCv2tkwrQW5LcH6/jwm4taUEOHc=
+
+sticky@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/sticky/-/sticky-0.8.0.tgz#09d417fd1ef9c019ca8a3b02198ea6cbe31b238e"
+  integrity sha1-CdQX/R75wBnKijsCGY6my+MbI44=
+  dependencies:
+    es6-promise "^1.0.0"
+    moment "^2.6.0"
+    typemap "^1.1.0"
+    underscore "^1.6.0"
+
 stream-browserify@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.2.tgz#87521d38a44aa7ee91ce1cd2a47df0cb49dd660b"
@@ -10394,6 +10424,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typemap@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/typemap/-/typemap-1.1.0.tgz#e0ec8b27c0fd76d058bc3d2287199c99b503c285"
+  integrity sha1-4OyLJ8D9dtBYvD0ihxmcmbUDwoU=
+
 ua-parser-js@0.7.17:
   version "0.7.17"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.17.tgz#e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac"
@@ -10472,6 +10507,11 @@ unbzip2-stream@^1.0.9:
   dependencies:
     buffer "^5.2.1"
     through "^2.3.8"
+
+underscore@^1.6.0:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.10.2.tgz#73d6aa3668f3188e4adb0f1943bd12cfd7efaaaf"
+  integrity sha512-N4P+Q/BuyuEKFJ43B9gYuOj4TQUHXX+j2FqguVOpjkssLUUrnJofCcBccJSCoeturDoZU6GorDTHSvUDlSQbTg==
 
 unherit@^1.0.4:
   version "1.1.2"

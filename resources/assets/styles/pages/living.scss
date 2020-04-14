@@ -85,7 +85,6 @@
     }
     > span {
       margin-bottom: 0;
-      color: #a2aaad;
     }
   }
   span.link {
@@ -442,6 +441,9 @@
     resize: none;
     padding: 12px;
     border: 1px solid #a2aaad;
+  }
+  span {
+    color: #a2aaad;
   }
   .count {
     background: white;

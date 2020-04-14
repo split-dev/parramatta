@@ -40,9 +40,13 @@ export default {
     );
 
     //mega-menu
-    var myElement = document.querySelector('.mega-menu');
-    var headroom  = new Headroom(myElement);
-    headroom.init();
+    if (!$('body').hasClass('parent-category')) {
+      var myElement = document.querySelector('.mega-menu');
+      var headroom  = new Headroom(myElement);
+      headroom.init();
+    } else  {
+      return;
+    }
 
     //mob-menu
     // eslint-disable-next-line no-redeclare

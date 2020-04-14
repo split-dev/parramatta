@@ -32,6 +32,10 @@
     {
       "title": "Article page",
       "url": "/article.html"
+    },
+    {
+      "title": "Parent category",
+      "url": "/parent-category.html"
     }
   ]
 }

@@ -18,6 +18,7 @@ import map from './routes/map-page';
 import living from './routes/living';
 import child from './routes/child';
 import events from './routes/events'
+import parentCategory from './routes/parent-category'
 
 window._detector = new Detection({
  detect: ['ie11'],
@@ -34,6 +35,7 @@ const routes = new Router({
   'living': living,
   'child': child,
   'eventsPage': events,
+  'parentCategory': parentCategory,
 });
 
 // Load Events
