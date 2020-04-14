@@ -69,6 +69,17 @@ export default {
         text: 'Filter by…', //Should be text not placeholder
       },
     });
+    $( 'ul.mega-menu__nav .dropdown-link' ).hover(
+      function() {
+        $( 'ul.mega-menu__nav >li' ).not(this).addClass('hover');
+        if ($(this).hasClass('dropdown-link')) {
+          $('.shadow-bg').addClass('show');
+        }
+      }, function() {
+        $( 'ul.mega-menu__nav >li' ).removeClass( 'hover' );
+        $('.shadow-bg').removeClass('show');
+      }
+    );
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
