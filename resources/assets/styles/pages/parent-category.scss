@@ -1,6 +1,13 @@
 .parent-category {
+  overflow-x: hidden;
   .mega-menu {
     position: absolute;
+  }
+  .news {
+    margin-top: 60px;
+    @media (max-width: 640px) {
+      margin-top: 40px;
+    }
   }
   //select2
 

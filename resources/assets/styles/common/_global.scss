@@ -323,3 +323,8 @@ ul {
     }
   }
 }
+.main-content {
+  @media (max-width: 640px) {
+    margin-top: 40px;
+  }
+}
