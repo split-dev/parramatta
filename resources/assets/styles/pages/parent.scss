@@ -102,6 +102,9 @@
       font-weight: 700;
       color: $primary;
       margin-bottom: 8px;
+      @media (max-width: 640px) {
+        max-width: 254px;
+      }
     }
     ul {
       li {
@@ -136,6 +139,13 @@
           right: -1px;
         }
       }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .parent {
+    .top-bg__info {
+      background-image: url("images/background/parent-mob.jpg") !important;
     }
   }
 }

@@ -14,6 +14,9 @@
     @media (max-width: 767px) {
       height: 235px;
     }
+    @media (max-width: 640px) {
+      background-image: url("images/background/map-mob.jpg") !important;
+    }
   }
 
   &__box {

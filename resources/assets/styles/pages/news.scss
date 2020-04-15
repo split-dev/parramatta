@@ -163,6 +163,11 @@
   }
 }
 .news-page {
+  @media (max-width: 640px) {
+    .news-bg__info {
+      background-image: url("images/background/news-mob.jpg") !important;
+    }
+  }
   .news {
     background-color: #fff;
   }

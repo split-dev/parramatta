@@ -1,5 +1,10 @@
 .parent-category {
   overflow-x: hidden;
+  .parent-bg__info {
+    @media (max-width: 640px) {
+      background-image: url("images/background/parent-category-mob.jpg") !important;
+    }
+  }
   .mega-menu {
     position: absolute;
   }

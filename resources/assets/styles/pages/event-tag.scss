@@ -1,4 +1,9 @@
 .event-tag {
+  .category-info__bg {
+    @media (max-width: 640px) {
+      background-image: url("images/background/fire-mob.jpg") !important;
+    }
+  }
   .news {
     margin-top: 60px;
     @media (max-width: 640px) {

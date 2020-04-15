@@ -1,4 +1,9 @@
 .child {
+  .category-bg__info {
+    @media (max-width: 640px) {
+      background-image: url("images/background/child-mob.jpg") !important;
+    }
+  }
   .textarea {
     margin-bottom: 20px;
   }

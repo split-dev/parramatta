@@ -386,6 +386,13 @@
 .ui-slider a:focus {
   outline: none;
 }
+.living {
+  .category-bg__info {
+    @media (max-width: 640px) {
+      background-image: url("images/background/living-mob.jpg") !important;
+    }
+  }
+}
 .living,
 .child {
   .news {
