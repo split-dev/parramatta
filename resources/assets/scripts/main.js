@@ -29,7 +29,7 @@ window._detector.init();
 const routes = new Router({
   // All pages
   common,
-  'index': home,
+  'home': home,
   'newsPage': news,
   'mapPage': map,
   'living': living,

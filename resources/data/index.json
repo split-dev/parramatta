@@ -6,7 +6,7 @@
     "images": "./images/background/poll.jpg"
   },
   "cta": {
-    "anim": "wow fadeIn",
+    "anim": "wow fadeInUp",
     "data-anim": "data-wow-delay=\"0.2s\""
   },
   "news": [

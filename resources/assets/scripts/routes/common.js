@@ -3,22 +3,9 @@ import 'foundation-sites/dist/js/plugins/foundation.accordionMenu'
 import 'foundation-sites/dist/js/plugins/foundation.core'
 import 'foundation-sites/dist/js/plugins/foundation.util.keyboard'
 import 'foundation-sites/dist/js/plugins/foundation.util.nest'
-import {WOW} from 'wowjs';
-
-// eslint-disable-next-line no-unused-vars
-const wow = new WOW({
-  boxClass: 'wow',
-  animateClass: 'animated',
-  offset: 200,
-  live: true,
-});
 
 export default {
   init() {
-    //wow
-    setTimeout(function () {
-      wow.init();
-    },350);
     //menu
     $('.mob-menu__burger').click( function () {
       $('body').addClass('blocked');
