@@ -60,6 +60,8 @@ export default {
         $( 'ul.mega-menu__nav >li' ).not(this).addClass('hover');
         if ($(this).hasClass('dropdown-link')) {
           $('.shadow-bg').addClass('show');
+          $('.mega-menu__search').removeClass('active');
+          $('.search').removeClass('line');
         }
       }, function() {
         $( 'ul.mega-menu__nav >li' ).removeClass( 'hover' );
@@ -129,6 +131,30 @@ export default {
         });
       })(jQuery);
     }
+    $('.search').click( function (e) {
+      e.preventDefault();
+      $('.mega-menu__search').toggleClass('active');
+      $(this).toggleClass('line');
+      $('.shadow-bg').toggleClass('show');
+    });
+    //target
+    $(document).mouseup(function (e){
+      if(jQuery('.mega-menu__search').hasClass('active')) {
+        var div = $('.mega-menu');
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+          $('.mega-menu__search').removeClass('active');
+          $('.shadow-bg').removeClass('show');
+        }
+      }
+    });
+    //input live search
+    $('.mega-menu__search input').on('input', function () {
+      if ($(this).val().length > 0) {
+        $('.mega-menu__result').css('display', 'block');
+      } else {
+        $('.mega-menu__result').css('display', 'none');
+      }
+    })
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
