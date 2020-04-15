@@ -3,12 +3,12 @@
 <head>
   {{> ../common/head }}
 </head>
-<body>
+<body class="home">
 {{> ../common/mega-menu }}
 {{#with iWanTo}}
   <section class="want">
     <div class="row expanded">
-      <div class="want__img" style="background-image: url('{{images}}')">
+      <div class="want__img wow fadeInUp" style="background-image: url('{{images}}')">
         <a href="#" class="want__white-box">
           <h1>Have Your Say on our Parramatta Night Market</h1>
           <h3>City of Parramatta Council has revealed the concept design for the new aquatic and leisure centre</h3>
@@ -20,7 +20,7 @@
           </span></span>
         </a>
       </div>
-      <div class="want__list column">
+      <div class="want__list column wow fadeInRight">
         <h2>I want to…</h2>
         <ul>
           <li>
@@ -88,8 +88,8 @@
 {{#with latest}}
   <section class="latest-news">
     <div class="row expanded align-center flex-justify-center">
-      <div class="latest-news__img" style="background-image: url('{{ images }}')"></div>
-      <div class="latest-news__text column">
+      <div class="latest-news__img wow fadeInLeft" data-wow-delay="0.2s" style="background-image: url('{{ images }}')"></div>
+      <div class="latest-news__text column wow fadeInRight" data-wow-delay="0.2s">
         <h2>Latest news and media</h2>
         <ul>
           <li><a href="#">
@@ -166,7 +166,7 @@
     </div>
   </section>
 {{/with}}
-<section class="news events">
+<section class="news events wow fadeIn" data-wow-delay="0.4s">
   <div class="row column">
     <h2>Upcoming events</h2>
   </div>
@@ -212,7 +212,9 @@
     </span>
   </a>
 </section>
-{{> ../common/cta }}
+{{#with cta}}
+  {{> ../common/cta }}
+{{/with}}
 {{> ../common/mobile-nav }}
 <div class="alert">
   <div class="alert__cookie column">

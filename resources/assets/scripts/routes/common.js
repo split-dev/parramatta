@@ -9,12 +9,16 @@ import {WOW} from 'wowjs';
 const wow = new WOW({
   boxClass: 'wow',
   animateClass: 'animated',
-  offset: 0,
+  offset: 200,
   live: true,
 });
 
 export default {
   init() {
+    //wow
+    setTimeout(function () {
+      wow.init();
+    },350);
     //menu
     $('.mob-menu__burger').click( function () {
       $('body').addClass('blocked');
