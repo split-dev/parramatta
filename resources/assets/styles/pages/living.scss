@@ -287,6 +287,7 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
+    padding-bottom: 8px;
     &:last-of-type {
       margin: 0 0 0 5px;
     }
@@ -313,18 +314,7 @@
   text-align: left;
   height: 1px;
   background-color: #d0d0ce;
-  border: 3px solid #d0d0ce;
-  &:before {
-    position: absolute;
-    content: "";
-    display: block;
-    height: 3px;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #d0d0ce;
-  }
+  border: 2px solid #d0d0ce;
 }
 .ui-slider-horizontal .ui-slider-range {
   top: -1px;
@@ -372,15 +362,23 @@
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  background-color: #00b8de;
+  background-color: #d0d0ce;
   top: -10px;
   margin-left: -0.6em !important;
+  transition: $transition;
   span {
     position: absolute;
     top: 23px;
     left: -10px;
     margin: 0;
-    color: #00b8de;
+    color: black;
+    transition: $transition;
+  }
+  &.ui-state-focus {
+    background-color: #00b8de;
+    span {
+      color: #00b8de;
+    }
   }
 }
 .ui-slider a:focus {
