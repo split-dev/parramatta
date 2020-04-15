@@ -7,7 +7,7 @@
   },
   "cta": {
     "anim": "wow fadeInUp",
-    "data-anim": "data-wow-delay=\"0.2s\""
+    "data-anim": "data-wow-duration=\"0.5s\""
   },
   "news": [
     {
