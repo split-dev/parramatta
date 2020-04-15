@@ -80,6 +80,10 @@ export default {
         $('.shadow-bg').removeClass('show');
       }
     );
+    //mob error close
+    $('.mob-menu__error .close').click ( function () {
+      $('.mob-menu__error').addClass('hidden');
+    });
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
