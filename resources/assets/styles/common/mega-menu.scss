@@ -210,7 +210,9 @@
         > span {
           display: flex;
           align-items: center;
-          width: 90%;
+          &:first-of-type {
+            width: 90%;
+          }
           img {
             padding-right: 15px;
           }
