@@ -12,7 +12,11 @@ const wow = new WOW({
 export default {
   init() {
     //wow
-    wow.init();
+    if ($(window).width() > '640'){
+      wow.init();
+    } else {
+      return
+    }
   },
 
   // JavaScript to be fired on all pages, after page specific JS is fired
