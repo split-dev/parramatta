@@ -3,6 +3,15 @@ import 'foundation-sites/dist/js/plugins/foundation.accordionMenu'
 import 'foundation-sites/dist/js/plugins/foundation.core'
 import 'foundation-sites/dist/js/plugins/foundation.util.keyboard'
 import 'foundation-sites/dist/js/plugins/foundation.util.nest'
+import {WOW} from 'wowjs';
+
+// eslint-disable-next-line no-unused-vars
+const wow = new WOW({
+  boxClass: 'wow',
+  animateClass: 'animated',
+  offset: 0,
+  live: true,
+});
 
 export default {
   init() {
@@ -61,6 +70,8 @@ export default {
         if ($(this).hasClass('dropdown-link')) {
           $('.shadow-bg').addClass('show');
           $('.mega-menu__search').removeClass('active');
+          $('.mega-menu__search input').val('');
+          $('.mega-menu__result').css('display', 'none');
           $('.search').removeClass('line');
         }
       }, function() {
@@ -136,6 +147,8 @@ export default {
       $('.mega-menu__search').toggleClass('active');
       $(this).toggleClass('line');
       $('.shadow-bg').toggleClass('show');
+      $('.mega-menu__search input').val('');
+      $('.mega-menu__result').css('display', 'none');
     });
     //target
     $(document).mouseup(function (e){
@@ -144,6 +157,8 @@ export default {
         if (!div.is(e.target) && div.has(e.target).length === 0) {
           $('.mega-menu__search').removeClass('active');
           $('.shadow-bg').removeClass('show');
+          $('.mega-menu__search input').val('');
+          $('.mega-menu__result').css('display', 'none');
         }
       }
     });
@@ -154,7 +169,7 @@ export default {
       } else {
         $('.mega-menu__result').css('display', 'none');
       }
-    })
+    });
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {
