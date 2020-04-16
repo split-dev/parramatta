@@ -1,9 +1,9 @@
 .article-content {
   margin-top: 60px;
   h2 {
-    color: #002b49;
-    font-size: 28px;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 34px;
     margin-bottom: 25px;
   }
   p {
@@ -27,6 +27,7 @@
     font-weight: 400;
     font-style: italic;
     line-height: 22px;
+    margin-top: 5px;
   }
 }
 .article {

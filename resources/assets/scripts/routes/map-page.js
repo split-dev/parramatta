@@ -16,8 +16,15 @@ export default {
     //reset
     $('.map__reset').click( function (e) {
       e.preventDefault();
-      $('.map__list input').prop('checked', false);
-      check();
+      let inp = $('.map__list input:checked').length;
+      if (inp > 0) {
+        $('.map__reset img').addClass('progress');
+        setTimeout(function(){
+          $('.map__list input').prop('checked', false);
+          check();
+          $('.map__reset img').removeClass('progress');
+        }, 2000);
+      } else return
     });
     //check
     $('.map__list input').change( function () {

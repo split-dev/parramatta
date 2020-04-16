@@ -157,10 +157,22 @@ export default {
     $('.mega-menu__search input').on('input', function () {
       if ($(this).val().length > 0) {
         $('.mega-menu__result').css('display', 'block');
+        setTimeout(function(){
+          $('.loader').addClass('hidden');
+        }, 3000);
       } else {
         $('.mega-menu__result').css('display', 'none');
       }
     });
+    //hover search
+    $( '.mega-menu__search').hover(
+      function() {
+      }, function() {
+        $('.mega-menu__form input').val('');
+        $('.mega-menu__result').css('display','none');
+        $('.loader').removeClass('hidden').addClass('visible');
+      }
+    );
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

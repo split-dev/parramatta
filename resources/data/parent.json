@@ -23,7 +23,7 @@
     },
     {
       "offset": "large-offset-1",
-      "name": "Vel turpis nunc \neget lorem dolor",
+      "name": "Vel turpis nunc <br> eget lorem dolor",
       "line": [
         {
           "line-item": "Lorem ipsum dolor"

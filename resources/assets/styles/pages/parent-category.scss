@@ -107,9 +107,9 @@
 
     h3 {
       color: #a2aaad;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 24px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 25px;
       margin-bottom: 5px;
       text-transform: uppercase;
     }
@@ -233,7 +233,11 @@
       bottom: 0;
       display: flex;
       z-index: 1;
+      transition: $transition;
       @include center;
+      &:hover {
+        background-color: $secondary;
+      }
     }
     .button-next {
       background-color: $primary;
@@ -244,7 +248,11 @@
       bottom: 0;
       display: flex;
       z-index: 1;
+      transition: $transition;
       @include center;
+      &:hover {
+        background-color: $secondary;
+      }
     }
   }
 }

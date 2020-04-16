@@ -15,7 +15,7 @@ export default {
     $('.filter li').click( function (e) {
       e.preventDefault();
       $('.filter li').not(this).removeClass('active');
-      $(this).addClass('active');
+      $(this).toggleClass('active');
     })
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
