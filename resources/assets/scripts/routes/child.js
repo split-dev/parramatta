@@ -1,87 +1,88 @@
-import 'select2/dist/js/select2.min'
-import 'air-datepicker/dist/js/datepicker'
-import 'air-datepicker/dist/js/i18n/datepicker.en'
-import 'jquery-ui/ui/widgets/slider'
+import StickySidebar from 'sticky-sidebar/dist/sticky-sidebar'
+import Swiper from 'swiper/js/swiper.min';
+import Headroom from 'headroom.js';
 
 export default {
   init() {
-    $('.datepicker-start').datepicker({
-      language: 'en',
-      autoClose: true,
+    // eslint-disable-next-line no-unused-vars
+    var sidebar = new StickySidebar('.sidebar', {
+      topSpacing: 80,
+      bottomSpacing: 20,
+      containerSelector: '.main-content',
+      innerWrapperSelector: '.sidebar__inner',
+      observeParents: true,
     });
-    //one time
-    $('#slider-range-line-1').slider({
-      range: false,
-      min: 0,
-      max: 1440,
-      step: 15,
-      values: [0],
-      slide: function (e, ui) {
-        var hours1 = Math.floor(ui.values[0] / 60);
-        var minutes1 = ui.values[0] - (hours1 * 60);
-
-        if (hours1.length == 1) hours1 = '0' + hours1;
-        if (minutes1.length == 1) minutes1 = '0' + minutes1;
-        if (minutes1 == 0) minutes1 = '00';
-        if (hours1 < 10) {
-          // eslint-disable-next-line no-self-assign
-          hours1 = '0' + hours1;
-          // eslint-disable-next-line no-self-assign
-          minutes1 = minutes1;
-        }
-        if (hours1 >= 12) {
-          if (hours1 == 12) {
-            // eslint-disable-next-line no-self-assign
-            hours1 = hours1;
-            // eslint-disable-next-line no-self-assign
-            minutes1 = minutes1;
-          }
-        } else {
-          // eslint-disable-next-line no-self-assign
-          hours1 = hours1;
-          // eslint-disable-next-line no-self-assign
-          minutes1 = minutes1;
-        }
-        if (hours1 == 0) {
-          hours1 = '0' + 0;
-          // eslint-disable-next-line no-self-assign
-          minutes1 = minutes1;
-        }
-        $('#slider-range-line-1 span.ui-slider-handle span').fadeIn();
-        $('#slider-range-line-1 span.ui-slider-handle span').html(hours1 + ':' + minutes1);
+    //swiper
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      loop: true,
+      spaceBetween: 5,
+      slidesPerView: 5,
+      observeParents: true,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 3,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 5,
+        },
       },
     });
-    $('#slider-range-line-1 span.ui-slider-handle').append('<span>00:00</span>');
-    $('#slider-range-line-1 span.ui-slider-handle span').css('display','none');
-
-    //select2 filter
+    // eslint-disable-next-line no-unused-vars
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+    //nav swiper
+    var mySwiper = document.querySelector('.gallery-top').swiper;
+    $('.button-next').click( function (e) {
+      e.preventDefault();
+      mySwiper.slideNext();
+    });
+    $('.button-prev').click( function (e) {
+      e.preventDefault();
+      mySwiper.slidePrev();
+    });
+    //scroll
+    let elem = $('.anchor').offset().top;
+    document.addEventListener('scroll', function() {
+      if(pageYOffset > elem) {
+        $('.anchor').addClass('fixed');
+      } else {
+        $('.anchor').removeClass('fixed');
+      }
+    });
+    //headroom
+    //mob-menu
+    // eslint-disable-next-line no-redeclare
+    var myElement = document.querySelector('.mob-menu');
+    // eslint-disable-next-line no-redeclare
+    var headroom  = new Headroom(myElement);
+    headroom.init();
+    //select2
     $('.js-example-basic-filter').select2({
       placeholder: {
         id: '0',
-        text: 'Please select…', //Should be text not placeholder
+        text: 'Filter by…', //Should be text not placeholder
       },
     });
-    //open air date
-    $('.date svg').click( function () {
-      let element = $(this).prev();
-      var myDatepicker = $(element).datepicker().data('datepicker');
-      myDatepicker.show();
-    });
-    //add load button
-    let number = 2;
-    $('.add__button').click( function (e) {
-      e.preventDefault();
-      if (number <= 3) {
-        $('.img-box').append('<div class="form__img">\n' +
-          '            <input type="file" class="custom-file-input" onchange="element(this)" id="customFile' + number + '">\n' +
-          '            <label for="customFile' + number + '"> <img src="images/icons/download.svg"> <img src="images/icons/white-download.svg"> Choose a file…</label>\n' +
-          '            <div class="file-load">\n' +
-          '              <span class="file-name"></span>\n' +
-          '              <span data-file="customFile' + number + '" onclick="remove(this)" class="remove">Remove file</span>\n' +
-          '            </div>\n' +
-          '          </div>');
-        number = number + 1;
+    $( 'ul.mega-menu__nav .dropdown-link' ).hover(
+      function() {
+        $( 'ul.mega-menu__nav >li' ).not(this).addClass('hover');
+        if ($(this).hasClass('dropdown-link')) {
+          $('.shadow-bg').addClass('show');
+        }
+      }, function() {
+        $( 'ul.mega-menu__nav >li' ).removeClass( 'hover' );
+        $('.shadow-bg').removeClass('show');
       }
+    );
+    //mob error close
+    $('.mob-menu__error .close').click ( function () {
+      $('.mob-menu__error').addClass('hidden');
     });
   },
   // JavaScript to be fired on all pages, after page specific JS is fired

@@ -40,7 +40,7 @@ export default {
     );
 
     //mega-menu
-    if (!$('body').hasClass('parent-category')) {
+    if (!$('body').hasClass('child')) {
       var myElement = document.querySelector('.mega-menu');
       var headroom  = new Headroom(myElement);
       headroom.init();
