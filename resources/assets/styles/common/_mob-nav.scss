@@ -154,14 +154,27 @@
     transform: translateX(0);
   }
   .accordion-menu {
+    .is-submenu-item {
+      margin-top: 5px;
+      a {
+        padding: 10px 1rem !important;
+      }
+    }
+  }
+  .accordion-menu {
     background-color: #fff;
     padding: 25px 0;
     > li {
+      &.select {
+        > a {
+          font-weight: 700;
+        }
+      }
       a {
         margin-right: 0 !important;
         display: inline-block !important;
         color: $primary;
-        font-weight: 700;
+        font-weight: 400;
       }
       button {
         position: relative;

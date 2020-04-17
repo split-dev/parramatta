@@ -284,6 +284,9 @@ a[role="link"] {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  @media (max-width: 640px) {
+    max-width: 100%;
+  }
   &:hover {
     border: 1px solid $secondary;
     background-color: $secondary;

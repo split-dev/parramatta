@@ -8,6 +8,9 @@
   .mega-menu {
     position: absolute;
   }
+  .mob-menu {
+    position: absolute;
+  }
   .news {
     margin-top: 60px;
     @media (max-width: 640px) {
@@ -16,6 +19,16 @@
   }
   //select2
 
+  .select2.select2-container {
+    &.fixed {
+      position: fixed !important;
+      top: 15px !important;
+      width: calc(100% - 20px) !important;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
   .select2-search--dropdown {
     display: none !important;
   }
@@ -52,7 +65,9 @@
 }
 .parent-bg {
   position: relative;
-
+  @media (max-width: 767px) {
+    background-color: #f9f9f9;
+  }
   &__info {
     height: 280px;
     width: 100%;
@@ -80,6 +95,7 @@
     padding: 30px 30px 30px 50px;
     position: absolute;
     @media (max-width: 767px) {
+      background-color: #f9f9f9;
       margin: 0 !important;
       padding: 25px;
       position: static;
@@ -99,7 +115,7 @@
 
     h1 {
       font-size: 40px;
-      font-weight: 700;
+      font-weight: 800;
       line-height: 46px;
       color: $primary;
       margin-bottom: 15px;
@@ -183,6 +199,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
+    margin-bottom: 3px;
   }
   hr {
     margin: 40px 0;

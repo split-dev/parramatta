@@ -1,6 +1,8 @@
 .category-bg {
   position: relative;
-
+  @media (max-width: 767px) {
+    background-color: #f9f9f9;
+  }
   &__info {
     height: 280px;
     width: 100%;
@@ -28,6 +30,7 @@
     padding: 30px 30px 30px 50px;
     position: absolute;
     @media (max-width: 767px) {
+      background-color: #f9f9f9;
       margin: 0 !important;
       padding: 25px;
       position: static;
@@ -47,7 +50,7 @@
 
     h1 {
       font-size: 40px;
-      font-weight: 700;
+      font-weight: 800;
       line-height: 46px;
       color: $primary;
       margin-bottom: 15px;
@@ -107,6 +110,7 @@
     font-weight: 700;
     line-height: 25px;
     margin-bottom: 20px;
+    color: $primary;
   }
   .form {
     input[type=radio],

@@ -173,6 +173,11 @@ export default {
         $('.loader').removeClass('hidden').addClass('visible');
       }
     );
+    $('.mob-menu__nav .accordion-menu>li').click( function (e) {
+      e.preventDefault();
+      $('.mob-menu__nav .accordion-menu>li').not(this).removeClass('select');
+      $(this).toggleClass('select');
+    })
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

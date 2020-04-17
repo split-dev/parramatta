@@ -17,7 +17,7 @@
       width: 100%;
       color: #fff;
       font-size: 40px;
-      font-weight: 700;
+      font-weight: 800;
       line-height: 46px;
       margin-bottom: 25px;
     }
@@ -154,6 +154,7 @@
       top: 0;
       bottom: 0;
       margin: auto;
+      pointer-events: none;
     }
   }
 }
@@ -169,6 +170,9 @@
     margin-bottom: 30px;
   }
   //select2
+  .select2-dropdown {
+    transform: translateY(-3px) translateX(1px);
+  }
   .js-example-basic-filter {
     @media (max-width: 700px) {
       max-width: calc(100% - 30px) !important;
@@ -199,10 +203,18 @@
   .select2-selection {
     max-width: 360px !important;
     height: 60px !important;
-    border: 1px solid #a2aaad !important;
     background-color: #fff !important;
     border-radius: 0 !important;
     outline: none !important;
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid #a2aaad !important;
+    }
     @media (max-width: 700px) {
       max-width: 100% !important;
     }

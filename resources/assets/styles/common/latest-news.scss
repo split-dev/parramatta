@@ -30,14 +30,28 @@
         a {
           display: flex;
           align-items: center;
+          padding-left: 11px;
+          transition: $transition;
+          position: relative;
+          &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            width: 0;
+            background-color: $secondary;
+            transition: $transition;
+          }
           &:hover {
+            padding-left: 16px;
             .line-left {
               max-width: 5px;
               margin-right: 11px;
             }
-            .line {
-              width: 32px;
-              background-color: $secondary;
+            &:before {
+              width: 5px;
             }
             svg * {
               fill: $secondary;

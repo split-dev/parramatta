@@ -70,6 +70,7 @@
       letter-spacing: 0;
       line-height: 25px;
       padding: 17px 20px;
+      margin: 0;
       &::-webkit-input-placeholder,
       &::-moz-placeholder,
       &:-ms-input-placeholder,
@@ -139,6 +140,9 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    .loading-btn {
+      margin: 0;
+    }
     &.hidden {
       opacity: 0;
       visibility: hidden;

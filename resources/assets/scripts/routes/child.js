@@ -1,6 +1,15 @@
 import StickySidebar from 'sticky-sidebar/dist/sticky-sidebar'
 import Swiper from 'swiper/js/swiper.min';
-import Headroom from 'headroom.js';
+import {WOW} from 'wowjs';
+
+// eslint-disable-next-line no-unused-vars
+const wow = new WOW({
+  boxClass: 'wow',
+  animateClass: 'animated',
+  offset: 200,
+  mobile: false,
+  live: true,
+});
 
 export default {
   init() {
@@ -55,18 +64,20 @@ export default {
         $('.anchor').removeClass('fixed');
       }
     });
-    //headroom
-    //mob-menu
-    // eslint-disable-next-line no-redeclare
-    var myElement = document.querySelector('.mob-menu');
-    // eslint-disable-next-line no-redeclare
-    var headroom  = new Headroom(myElement);
-    headroom.init();
+    //fixed select
+    let select = $('.js-example-basic-filter').offset().top;
+    document.addEventListener('scroll', function() {
+      if(pageYOffset > select) {
+        $('.select2.select2-container').addClass('fixed');
+      } else {
+        $('.select2.select2-container').removeClass('fixed');
+      }
+    });
     //select2
     $('.js-example-basic-filter').select2({
       placeholder: {
         id: '0',
-        text: 'Filter by…', //Should be text not placeholder
+        text: 'Go to…', //Should be text not placeholder
       },
     });
     $( 'ul.mega-menu__nav .dropdown-link' ).hover(
@@ -84,6 +95,12 @@ export default {
     $('.mob-menu__error .close').click ( function () {
       $('.mob-menu__error').addClass('hidden');
     });
+    //wow
+    if ($(window).width() > '640'){
+      wow.init();
+    } else {
+      return
+    }
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

@@ -6,7 +6,7 @@
 <body class="child">
 {{> ../common/mega-menu }}
 {{#with topInfo}}
-  <div class="parent-bg">
+  <div class="parent-bg wow fadeIn" data-wow-delay="0.2s">
     <div class="parent-bg__info" style="background-image: url(' {{image}} ')"></div>
     <div class="parent-bg__box">
       <h3>{{category}}</h3>
@@ -16,15 +16,15 @@
 {{/with}}
 <div class="anchor">
   <ul>
-    <li><a href="#">Section 1 Anchor Link</a></li>
-    <li><a href="#">Section 2 Anchor Link</a></li>
-    <li><a href="#">Section 3 Anchor Link</a></li>
+    <li class="wow fadeIn" data-wow-delay="0.5s"><a href="#">Section 1 Anchor Link</a></li>
+    <li class="wow fadeIn" data-wow-delay="0.8s"><a href="#">Section 2 Anchor Link</a></li>
+    <li class="wow fadeIn" data-wow-delay="1s"><a href="#">Section 3 Anchor Link</a></li>
   </ul>
 </div>
 <div class="anchor__select">
   <div class="row column">
     <select class="js-example-basic-filter" name="state">
-      <option value="0" disabled  selected>Filter by…</option>
+      <option value="0" disabled  selected>Go to…</option>
       <option value="AL">Council News</option>
       <option value="WY">Media Releases</option>
       <option value="WA">On Exhibition</option>
@@ -33,7 +33,7 @@
 </div>
 <section class="article-content">
   <div class="row">
-    <div class="small-12 medium-12 large-6 large-offset-1 column">
+    <div class="wow fadeIn small-12 medium-12 large-6 large-offset-1 column" data-wow-delay="0.5s">
       <div class="duo-cta">
         <a href="#" class="button-cta">Important CTA 1
           <div class="arrow">
@@ -86,7 +86,7 @@
         <a href="#" class="button-next"><img src="images/icons/arrow-right.svg" alt=""></a>
       </div>
     </div>
-    <div class="main-content small-12 medium-12 large-3 large-offset-1 column">
+    <div class="wow fadeIn main-content small-12 medium-12 large-3 large-offset-1 column" data-wow-delay="0.8s">
       <div class="sidebar">
         <div class="sidebar__inner">
           {{> ../common/rel_content }}
@@ -141,7 +141,9 @@
     </span>
   </a>
 </section>
-{{> ../common/cta }}
+{{#with cta}}
+  {{> ../common/cta }}
+{{/with}}
 {{> ../common/mobile-nav }}
 <footer>
   {{> ../common/footer }}
