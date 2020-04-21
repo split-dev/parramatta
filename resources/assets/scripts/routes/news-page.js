@@ -16,7 +16,16 @@ export default {
       e.preventDefault();
       $('.filter li').not(this).removeClass('active');
       $(this).toggleClass('active');
-    })
+    });
+    //fixed select
+    let select = $('.js-example-basic-filter').offset().top;
+    document.addEventListener('scroll', function() {
+      if(pageYOffset > select) {
+        $('.select2.select2-container').addClass('fixed');
+      } else {
+        $('.select2.select2-container').removeClass('fixed');
+      }
+    });
   },
   // JavaScript to be fired on all pages, after page specific JS is fired
   finalize() {

@@ -33,8 +33,14 @@
       position: relative;
       left: 0;
       margin: 0 !important;
-      padding: 25px;
       height: 315px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 15px 0 30px;
+      h1 {
+        margin-bottom: 0;
+      }
     }
     &:hover {
       &:before {
@@ -194,9 +200,17 @@
     }
   }
   //select2
-
+  .select2-selection__placeholder {
+    font-weight: 700;
+    font-size: 18px;
+  }
   .select2-search--dropdown {
     display: none !important;
+  }
+  .select2-dropdown {
+    @media (max-width: 640px) {
+      border: 1px solid #aaa !important;
+    }
   }
   .select2-selection {
     height: 60px !important;

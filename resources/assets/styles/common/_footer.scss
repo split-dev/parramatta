@@ -197,6 +197,9 @@
       display: block;
       max-width: 804px;
       color: #333f48;
+      @media (max-width: 640px) {
+        text-align: center;
+      }
     }
   }
   &__bottom {

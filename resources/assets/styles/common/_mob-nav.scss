@@ -9,6 +9,12 @@
   @media (max-width: 1199px) {
     display: block;
   }
+  &.headroom--top {
+    .mob-menu__error {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
   &.headroom--pinned {
     transform: translateY(0);
   }
@@ -22,12 +28,12 @@
     right: 0;
     height: 70px;
     background-color: #ff7e00;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     transition: $transition;
     &.hidden {
-      opacity: 0;
-      visibility: hidden;
+      opacity: 0 !important;
+      visibility: hidden !important;
     }
     .close {
       margin-left: 20px;
@@ -154,6 +160,13 @@
     transform: translateX(0);
   }
   .accordion-menu {
+    .submenu {
+      li:not(.is-submenu-item) {
+        a {
+          padding: 5px 1rem !important;
+        }
+      }
+    }
     .is-submenu-item {
       margin-top: 5px;
       a {
@@ -165,12 +178,14 @@
     background-color: #fff;
     padding: 25px 0;
     > li {
+      margin-bottom: 5px;
       &.select {
         > a {
           font-weight: 700;
         }
       }
       a {
+        font-size: 18px;
         margin-right: 0 !important;
         display: inline-block !important;
         color: $primary;

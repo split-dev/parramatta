@@ -33,6 +33,9 @@
           padding-left: 11px;
           transition: $transition;
           position: relative;
+          @media (max-width: 640px) {
+            padding-left: 0;
+          }
           &:before {
             position: absolute;
             left: 0;
@@ -46,6 +49,10 @@
           }
           &:hover {
             padding-left: 16px;
+            .line {
+              background-color: $secondary;
+              width: 32px;
+            }
             .line-left {
               max-width: 5px;
               margin-right: 11px;

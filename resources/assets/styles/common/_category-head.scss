@@ -33,9 +33,15 @@
     @media (max-width: 767px) {
       background-color: #f9f9f9;
       margin: 0 !important;
-      padding: 25px;
       position: static;
       height: auto;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        margin-bottom: 0 !important;
+      }
     }
     &:before {
       position: absolute;
