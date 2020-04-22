@@ -87,10 +87,10 @@
     }
   }
   &__list {
-    padding: 60px 0 43px 40px;
+    padding: 60px 0 43px 40px !important;
     background-color: #f9f9f9;
     @media (max-width: 991px) {
-      padding: 35px 15px;
+      padding: 35px 15px !important;
     }
     h2 {
       font-weight: 800;

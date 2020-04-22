@@ -20,7 +20,7 @@
   }
   &__text {
     h2 {
-      font-weight: 700;
+      font-weight: 800;
       color: $primary;
       margin-bottom: 25px;
     }
@@ -30,7 +30,7 @@
         a {
           display: flex;
           align-items: center;
-          padding-left: 11px;
+          padding-left: 0;
           transition: $transition;
           position: relative;
           @media (max-width: 640px) {
